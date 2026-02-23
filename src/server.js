@@ -1,16 +1,50 @@
 import express from "express";
+import cors from "cors";
 import multer from "multer";
 import sharp from "sharp";
 import heicConvert from "heic-convert";
+import FormData from "form-data";
 import { AccessoriesStore } from "./accessoriesStore.js";
 import { buildEditPrompt } from "./prompt.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// multipart upload
+// --- CORS (env-driven allowlist) ---
+const allowedOrigins = (process.env.ALLOWED_ORIGINS || "")
+  .split(",")
+  .map((s) => s.trim())
+  .filter(Boolean);
+
+// If ALLOWED_ORIGINS is empty, we still allow non-browser calls (no Origin header)
+// but we block unknown browser origins by default.
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      // No Origin header = curl / server-to-server / Postman
+      if (!origin) return callback(null, true);
+
+      // If no allowlist is set, block browser origins by default
+      if (allowedOrigins.length === 0) {
+        return callback(new Error("CORS blocked: ALLOWED_ORIGINS not set"), false);
+      }
+
+      if (allowedOrigins.includes(origin)) return callback(null, true);
+      return callback(new Error(`CORS blocked for origin: ${origin}`), false);
+    },
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: false
+  })
+);
+
+// Preflight for all routes (important for multipart/form-data)
+app.options("*", cors());
+
+// --- Upload ---
 const upload = multer({ limits: { fileSize: 15 * 1024 * 1024 } });
 
+// --- Data store ---
 const store = new AccessoriesStore();
 try {
   const count = store.load();
@@ -46,17 +80,15 @@ function normalizeSize(s) {
   return allowed.has(v) ? v : "1536x1024";
 }
 
-async function bikeToPngBuffer(file) {
+async function toPngBuffer(file) {
   const mime = (file.mimetype || "").toLowerCase();
   const name = (file.originalname || "").toLowerCase();
-
   const isHeic =
     mime === "image/heic" ||
     mime === "image/heif" ||
     name.endsWith(".heic") ||
     name.endsWith(".heif");
 
-  // Try decode with sharp first (covers jpg/png/webp/tiff/bmp)
   try {
     return await sharp(file.buffer, { animated: false })
       .rotate()
@@ -65,7 +97,6 @@ async function bikeToPngBuffer(file) {
       .toBuffer();
   } catch (err) {
     if (!isHeic) throw err;
-
     const converted = await heicConvert({ buffer: file.buffer, format: "PNG" });
     return await sharp(Buffer.from(converted))
       .rotate()
@@ -75,102 +106,154 @@ async function bikeToPngBuffer(file) {
   }
 }
 
-// IMPORTANT: multiple images must use image[] syntax (you saw this earlier)
-function appendImage(form, buf, filename) {
-  form.append("image[]", new Blob([buf], { type: "image/png" }), filename);
+async function callOpenAIImageEdit({ apiKey, pngBuffer, prompt, size }) {
+  const form = new FormData();
+
+  // IMPORTANT: use image[] (array syntax) so multiple images is allowed
+  form.append("image[]", pngBuffer, {
+    filename: "bike.png",
+    contentType: "image/png"
+  });
+
+  form.append("model", "gpt-image-1.5");
+  form.append("prompt", prompt);
+  form.append("size", size);
+  form.append("response_format", "b64_json");
+
+  const r = await fetch("https://api.openai.com/v1/images/edits", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      ...form.getHeaders()
+    },
+    body: form
+  });
+
+  const text = await r.text();
+
+  let json = null;
+  try {
+    json = JSON.parse(text);
+  } catch {
+    json = null;
+  }
+
+  return { ok: r.ok, status: r.status, rawText: text, json };
 }
 
-app.post(
-  "/v1/bike/render",
-  upload.single("bike_image"),
-  async (req, res) => {
-    try {
-      if (!process.env.OPENAI_API_KEY) {
-        return res.status(500).json({ error: "Missing OPENAI_API_KEY" });
-      }
+app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
+  try {
+    const apiKey = process.env.OPENAI_API_KEY;
+    if (!apiKey) return res.status(500).json({ error: "Missing OPENAI_API_KEY" });
 
-      if (!req.file) {
-        return res.status(400).json({ error: "bike_image (file) is required" });
-      }
+    if (!req.file) return res.status(400).json({ error: "bike_image (file) is required" });
 
-      const variant = normalizeVariant(req.body?.variant);
-      if (!variant) {
-        return res.status(400).json({ error: "variant must be r1300gs or r1300gs_adventure" });
-      }
+    const variant = normalizeVariant(req.body?.variant);
+    if (!variant) return res.status(400).json({ error: "variant must be r1300gs or r1300gs_adventure" });
 
-      const view = normalizeView(req.body?.view);
-      const background = String(req.body?.background || "studio_gray").toLowerCase().trim();
-      const realism = String(req.body?.realism || "studio_3d").toLowerCase().trim();
-      const size = normalizeSize(req.body?.size);
-      const debug = String(req.body?.debug || "false") === "true";
+    const view = normalizeView(req.body?.view);
+    const background = String(req.body?.background || "studio_gray").toLowerCase().trim();
+    const realism = String(req.body?.realism || "studio_3d").toLowerCase().trim();
+    const size = normalizeSize(req.body?.size);
+    const debug = String(req.body?.debug || "false") === "true";
 
-      const accessoryCsv = String(req.body?.accessory_ids || "");
-      if (!accessoryCsv.trim()) {
-        return res.status(400).json({ error: "accessory_ids is required (comma-separated IDs)" });
-      }
+    const accessoryCsv = String(req.body?.accessory_ids || "");
+    if (!accessoryCsv.trim()) {
+      return res.status(400).json({ error: "accessory_ids is required (comma-separated IDs)" });
+    }
 
-      // Filter out non-mountable items by default
-      const { selected, missing, filtered_out } = store.resolveFromCsv(accessoryCsv, { mountableOnly: true });
+    const { selected, missing, filtered_out } = store.resolveFromCsv(accessoryCsv, { mountableOnly: true });
 
-      const prompt = buildEditPrompt({
+    const prompt = buildEditPrompt({
+      variant,
+      view,
+      background,
+      realism,
+      accessories: selected
+    });
+
+    if (debug) {
+      return res.json({
+        ok: true,
         variant,
         view,
-        background,
-        realism,
-        accessories: selected
+        size,
+        missing_accessory_ids: missing,
+        filtered_out,
+        resolved_accessories: selected,
+        prompt
       });
-
-      if (debug) {
-        return res.json({
-          ok: true,
-          variant,
-          view,
-          size,
-          missing_accessory_ids: missing,
-          filtered_out,
-          resolved_accessories: selected,
-          prompt
-        });
-      }
-
-      // Normalize bike image to PNG for stability
-      const bikePng = await bikeToPngBuffer(req.file);
-
-      const form = new FormData();
-      appendImage(form, bikePng, "bike.png");
-
-      form.append("model", "gpt-image-1.5");
-      form.append("prompt", prompt);
-      form.append("size", size);
-      form.append("quality", "high");
-      form.append("output_format", "png");
-
-      const r = await fetch("https://api.openai.com/v1/images/edits", {
-        method: "POST",
-        headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}` },
-        body: form
-      });
-
-      if (!r.ok) {
-        const details = await r.text();
-        return res.status(r.status).json({ error: "OpenAI request failed", details });
-      }
-
-      const json = await r.json();
-      const b64 = json?.data?.[0]?.b64_json;
-      if (!b64) {
-        return res.status(500).json({ error: "No image returned", details: JSON.stringify(json).slice(0, 2000) });
-      }
-
-      const img = Buffer.from(b64, "base64");
-      res.setHeader("Content-Type", "image/png");
-      res.setHeader("X-Missing-Accessory-Ids", missing.join(","));
-      res.setHeader("X-Filtered-Out-Accessory-Ids", filtered_out.map((x) => x.id).join(","));
-      return res.send(img);
-    } catch (e) {
-      return res.status(500).json({ error: "Server error", details: String(e) });
     }
+
+    const bikePng = await toPngBuffer(req.file);
+
+    const result = await callOpenAIImageEdit({
+      apiKey,
+      pngBuffer: bikePng,
+      prompt,
+      size
+    });
+
+    if (!result.ok) {
+      return res.status(result.status).json({
+        error: "OpenAI request failed",
+        details: result.json ?? result.rawText
+      });
+    }
+
+    const b64 = result.json?.data?.[0]?.b64_json;
+    if (!b64) {
+      return res.status(500).json({
+        error: "No b64_json returned",
+        details: result.json ?? result.rawText
+      });
+    }
+
+    const img = Buffer.from(b64, "base64");
+    res.setHeader("Content-Type", "image/png");
+    res.setHeader("X-Missing-Accessory-Ids", missing.join(","));
+    res.setHeader("X-Filtered-Out-Accessory-Ids", filtered_out.map((x) => x.id).join(","));
+    return res.send(img);
+  } catch (e) {
+    return res.status(500).json({ error: "Server error", details: String(e) });
   }
-);
+});
+
+// Optional JSON helper to debug OpenAI response
+app.post("/v1/bike/render/json", upload.single("bike_image"), async (req, res) => {
+  try {
+    const apiKey = process.env.OPENAI_API_KEY;
+    if (!apiKey) return res.status(500).json({ error: "Missing OPENAI_API_KEY" });
+    if (!req.file) return res.status(400).json({ error: "bike_image (file) is required" });
+
+    const variant = normalizeVariant(req.body?.variant);
+    if (!variant) return res.status(400).json({ error: "variant must be r1300gs or r1300gs_adventure" });
+
+    const view = normalizeView(req.body?.view);
+    const background = String(req.body?.background || "studio_gray").toLowerCase().trim();
+    const realism = String(req.body?.realism || "studio_3d").toLowerCase().trim();
+    const size = normalizeSize(req.body?.size);
+
+    const accessoryCsv = String(req.body?.accessory_ids || "");
+    if (!accessoryCsv.trim()) {
+      return res.status(400).json({ error: "accessory_ids is required (comma-separated IDs)" });
+    }
+
+    const { selected } = store.resolveFromCsv(accessoryCsv, { mountableOnly: true });
+
+    const prompt = buildEditPrompt({ variant, view, background, realism, accessories: selected });
+    const bikePng = await toPngBuffer(req.file);
+
+    const result = await callOpenAIImageEdit({ apiKey, pngBuffer: bikePng, prompt, size });
+
+    return res.status(result.status).json({
+      ok: result.ok,
+      status: result.status,
+      openai: result.json ?? result.rawText
+    });
+  } catch (e) {
+    return res.status(500).json({ error: "Server error", details: String(e) });
+  }
+});
 
 app.listen(PORT, () => console.log(`Listening on :${PORT}`));
