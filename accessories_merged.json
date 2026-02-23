@@ -1,0 +1,3505 @@
+[
+  {
+    "id": "EI0025QA",
+    "name": "Adventure Collection backpack, olive, 20 l",
+    "price": "£ 99.00",
+    "keywords": {
+      "product_type": {
+        "backpack": 10,
+        "storage": 8
+      },
+      "primary_use_cases": {
+        "day trips": 8,
+        "daily commute": 8,
+        "adventure": 7
+      },
+      "key_features": {
+        "waterproof main compartment": 9,
+        "laptop sleeve": 8,
+        "roll closure": 7,
+        "ergonomic back pad": 6,
+        "adjustable straps": 6,
+        "outer pockets": 5,
+        "mesh pocket": 4,
+        "carry handle": 3
+      },
+      "materials_quality": {
+        "1680 ballistic nylon": 9,
+        "robust": 8,
+        "high-quality": 7
+      },
+      "weather_protection": {
+        "waterproof": 9,
+        "splash-proof": 6
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "20 l": 8,
+        "40 x 30 x 16 cm": 5,
+        "15 inch laptop": 7
+      },
+      "style_appearance": {
+        "olive": 4,
+        "black accents": 3,
+        "clean design": 4,
+        "simple design": 4
+      }
+    },
+    "description": "The high-quality Adventure Collection backpack made of robust nylon fabric is the perfect size for day trips and the daily commute. It combines a simple design with a multitude of functions. Rain showers are no problem thanks to its waterproof main compartment with an integrated laptop sleeve (up to 15”).",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YVDw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0025Q6",
+    "name": "Adventure Collection tank bag, large",
+    "price": "£ 244.00",
+    "keywords": {
+      "product_type": {
+        "tank bag": 10,
+        "storage": 8
+      },
+      "primary_use_cases": {
+        "longer trips": 9,
+        "adventure": 8,
+        "touring": 7
+      },
+      "key_features": {
+        "expandable volume": 9,
+        "waterproof main compartment": 8,
+        "removable inner bag": 7,
+        "cable port": 7,
+        "carry handle": 6,
+        "mesh compartments": 6,
+        "transparent compartment": 6,
+        "multi-use": 7,
+        "roll closure": 5
+      },
+      "materials_quality": {
+        "1680 ballistic nylon": 8,
+        "hard-wearing": 7,
+        "robust": 7
+      },
+      "weather_protection": {
+        "waterproof": 9,
+        "touch-enabled transparent": 6
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "steeply sloping tanks": 8
+      },
+      "capacity_size": {
+        "11-16 litres": 9,
+        "expandable": 8,
+        "large": 7,
+        "22x33x15/22cm": 5
+      },
+      "style_appearance": {
+        "olive": 4,
+        "black accents": 3,
+        "clean design": 4,
+        "simple design": 4
+      }
+    },
+    "description": "The large Adventure Collection tank bag is made from hard-wearing nylon fabric and is ideal for longer trips. It’s volume can be extended from 11 to 16 litres and is suitable for steeply sloping tank shapes. The practical features include the waterproof main compartment with inner bag, the cable duct and the carry handle.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YVsw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0025QL",
+    "name": "Adventure Collection tank bag, small",
+    "price": "£ 149.00",
+    "keywords": {
+      "product_type": {
+        "tank bag": 10,
+        "storage": 8,
+        "rear bag": 6,
+        "backpack": 6
+      },
+      "primary_use_cases": {
+        "short trips": 9,
+        "adventure": 7,
+        "touring": 6
+      },
+      "key_features": {
+        "waterproof main compartment": 9,
+        "removable inner bag": 8,
+        "cable port": 7,
+        "carry handle": 7,
+        "roll closure": 6,
+        "zipped lid pocket": 5,
+        "versatile mounting": 8
+      },
+      "materials_quality": {
+        "1680 ballistic nylon": 8,
+        "robust": 8,
+        "durable": 7
+      },
+      "weather_protection": {
+        "waterproof": 9
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "5 litres": 8,
+        "21 x 26 x 13 cm": 6,
+        "small": 7
+      },
+      "style_appearance": {
+        "olive": 3,
+        "black accents": 3,
+        "clean design": 4,
+        "simple design": 4
+      }
+    },
+    "description": "The small Adventure Collection tank bag made of robust nylon fabric with a volume of 5 litres is the ideal companion for short trips. Waterproof main compartment with inner bag, cable duct and carry handle are practical features that leave nothing to be desired.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YVaw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0026RD",
+    "name": "Aluminium case carry handle",
+    "price": "£ 25.00",
+    "keywords": {
+      "product_type": {
+        "carry handle": 9,
+        "accessory": 7,
+        "storage": 6
+      },
+      "primary_use_cases": {
+        "carrying cases": 8,
+        "luggage transport": 7,
+        "convenient handling": 6
+      },
+      "key_features": {
+        "easy attachment": 8,
+        "lashing hook mounting": 7,
+        "dual purpose use": 7,
+        "sturdy construction": 6
+      },
+      "materials_quality": {
+        "aluminium": 6,
+        "sturdy": 5
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "small topcase compatible": 5
+      },
+      "style_appearance": {}
+    },
+    "description": "The practical carry handle makes carrying the aluminium case and small, aluminium topcase extra convenient. It can be easily attached to the lashing hooks on the lid and can be used itself to attach further items of luggage when on the go.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XkXw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0026RC",
+    "name": "Aluminium case liners",
+    "price": "£ 224.00",
+    "keywords": {
+      "product_type": {
+        "case liners": 10,
+        "luggage accessory": 8,
+        "storage liner": 7
+      },
+      "primary_use_cases": {
+        "luggage transport": 9,
+        "packing": 7,
+        "portable carrying": 6
+      },
+      "key_features": {
+        "extra-wide opening": 8,
+        "carry handle": 7,
+        "shoulder strap": 7,
+        "quick-release buckle": 6,
+        "adjustable volume": 6,
+        "top attachment": 5
+      },
+      "materials_quality": {
+        "aluminium case compatibility": 8,
+        "perfectly fitted": 7
+      },
+      "weather_protection": {
+        "waterproof": 9
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "adjustable volume": 7,
+        "large opening": 6
+      },
+      "style_appearance": {
+        "black color": 3,
+        "BMW Motorrad inscription": 4
+      }
+    },
+    "description": "The waterproof liners make transporting luggage with the aluminium cases even easier and more secure. Their extra-wide opening allows for easier packing, and the carry handle and shoulder strap allow you to transport luggage items conveniently, even outside of the case.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Xkxw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI002727",
+    "name": "Aluminium topcase, black, 37 l, electrified",
+    "price": "£ 615.00",
+    "keywords": {
+      "product_type": {
+        "topcase": 10,
+        "storage": 9
+      },
+      "primary_use_cases": {
+        "touring": 8,
+        "luggage_storage": 7,
+        "helmet_storage": 7
+      },
+      "key_features": {
+        "USB-C_charging_port": 9,
+        "lighting": 8,
+        "magnetic_coupling": 7,
+        "single_key_locking": 6,
+        "G-hook": 5
+      },
+      "materials_quality": {
+        "aluminium": 9,
+        "high-quality": 8,
+        "sturdy": 8,
+        "anodised": 6
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R_1300_GS": 10,
+        "R_1300_GS_Adventure": 10
+      },
+      "capacity_size": {
+        "37_litres": 9,
+        "8_kg_load_capacity": 7
+      },
+      "style_appearance": {
+        "black": 4
+      }
+    },
+    "description": "The topcase made of black anodised aluminium is a loyal companion on tours. With its 37 litres of volume, it boasts enough space for smaller luggage or a helmet. Besides useful lighting, it also includes a USB-C charging port, for instance for smartphones or tablets.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8RWcw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI00272E",
+    "name": "Aluminium topcase, silver, 37 l, electrified",
+    "price": "£ 590.00",
+    "keywords": {
+      "product_type": {
+        "aluminium topcase": 10,
+        "storage": 9,
+        "electrified": 8
+      },
+      "primary_use_cases": {
+        "tours": 8,
+        "luggage storage": 7,
+        "helmet storage": 7
+      },
+      "key_features": {
+        "USB-C charging port": 9,
+        "lighting": 8,
+        "single key locking system": 7,
+        "G-hook": 6,
+        "magnetic coupling": 8
+      },
+      "materials_quality": {
+        "high-quality aluminium": 9,
+        "sturdy": 8
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "37 litres": 9,
+        "8 kg load capacity": 7
+      },
+      "style_appearance": {
+        "silver": 4
+      }
+    },
+    "description": "The aluminium topcase is a loyal companion on tours. With its 37 litres of volume, it boasts enough space for smaller luggage or a helmet. Besides useful lighting, it also includes a USB-C charging port, for instance for smartphones or tablets.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8RWWw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI00258E",
+    "name": "Bag for luggage grid",
+    "price": "£ 118.00",
+    "keywords": {
+      "product_type": {
+        "bag": 10,
+        "storage": 9,
+        "softbox": 7,
+        "luggage_grid_bag": 10
+      },
+      "primary_use_cases": {
+        "day_trips": 8,
+        "daily_commute": 8,
+        "work_rides": 7,
+        "short_trips": 6
+      },
+      "key_features": {
+        "waterproof_main_compartment": 9,
+        "three_side_zip": 7,
+        "quick_access": 6,
+        "carry_handle": 6,
+        "tank_bag_alternative": 5
+      },
+      "materials_quality": {
+        "waterproof": 8,
+        "compact": 5
+      },
+      "weather_protection": {
+        "waterproof": 9
+      },
+      "bike_compatibility": {
+        "R_1300_GS": 10,
+        "R_1300_GS_Adventure": 10
+      },
+      "capacity_size": {
+        "4.5_litres": 8,
+        "23x28x17_cm": 6
+      },
+      "style_appearance": {
+        "black": 3,
+        "subtle_design": 4
+      }
+    },
+    "description": "The bag for the luggage grid has a waterproof main compartment and, with a volume of 4.5 litres, provides enough storage space for day trips or the daily ride to work. It is a practical addition or alternative to the tank bag. The zip fastener on three sides allows quick access, while the carry handle facilitates transport.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YOWw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI002725",
+    "name": "Black aluminium cases, 36.5 l + 37 l, electrified",
+    "price": "£ 1,171.00",
+    "keywords": {
+      "product_type": {
+        "aluminium cases": 10,
+        "storage": 9,
+        "pannier cases": 8
+      },
+      "primary_use_cases": {
+        "long trips": 9,
+        "touring": 8,
+        "adventure riding": 7
+      },
+      "key_features": {
+        "USB-C charging port": 9,
+        "integrated charging": 8,
+        "G-hook": 6,
+        "quick fitting": 6,
+        "simple fitting": 5
+      },
+      "materials_quality": {
+        "high-quality": 8,
+        "sturdy": 8,
+        "aluminium": 7,
+        "anodised": 6
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "73 litres total": 9,
+        "37 litres": 8,
+        "36.5 litres": 8,
+        "10 kg load capacity": 7,
+        "helmet space": 6
+      },
+      "style_appearance": {
+        "black": 5,
+        "BMW Motorrad inscription": 4
+      }
+    },
+    "description": "The sturdy cases made of black anodised aluminium boast over 73 litres of space. Practical details such as an integrated USB-C charging port, a load capacity of up to 10 kg per side and enough space for a helmet make them particularly ideal for long trips.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8RWww1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI00267G",
+    "name": "Black backrest pad for Vario topcase",
+    "price": "£ 85.00",
+    "keywords": {
+      "product_type": {
+        "backrest pad": 10,
+        "topcase accessory": 8
+      },
+      "primary_use_cases": {
+        "pillion comfort": 9,
+        "longer tours": 7
+      },
+      "key_features": {
+        "increases comfort": 8,
+        "perfectly fits": 7,
+        "easy installation": 6,
+        "uncomplicated installation": 6
+      },
+      "materials_quality": {
+        "foam pad": 5
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "Vario topcase": 10
+      },
+      "capacity_size": {},
+      "style_appearance": {
+        "black": 4
+      }
+    },
+    "description": "The black backrest pad for the Vario topcase increases pillion comfort, especially on longer tours. The foam pad is easy to install and fits perfectly on the accompanying topcase.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XL1w1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI00257G",
+    "name": "Black Collection rear bag, large",
+    "price": "£ 244.00",
+    "keywords": {
+      "product_type": {
+        "rear bag": 9,
+        "storage": 8,
+        "pannier": 7
+      },
+      "primary_use_cases": {
+        "touring": 9,
+        "luggage transport": 8,
+        "motorcycle travel": 7
+      },
+      "key_features": {
+        "expandable capacity": 9,
+        "removable liner": 8,
+        "variable shoulder straps": 8,
+        "backpack conversion": 7,
+        "folds compact": 7,
+        "stable base": 6
+      },
+      "materials_quality": {
+        "TPU coating": 7,
+        "PES upper material": 5,
+        "PA lining": 5
+      },
+      "weather_protection": {
+        "waterproof": 9,
+        "waterproof liner": 8
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "50-60 litres": 9,
+        "large": 8,
+        "55x30x30/35 cm": 6
+      },
+      "style_appearance": {
+        "black": 4,
+        "blue highlights": 3,
+        "reflective stripes": 5,
+        "Black Collection": 6
+      }
+    },
+    "description": "The Black Collection rear bag offers intelligent details such as a waterproof, removable liner and variable shoulder straps with the option of carrying it as a backpack. The storage space can be expanded from 50 to 60 litres and makes the bag, which folds down to a compact size on the stable base and ideal companion for touring riders.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YL1w1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI00257F",
+    "name": "Black Collection rear bag, small",
+    "price": "£ 208.00",
+    "keywords": {
+      "product_type": {
+        "rear bag": 10,
+        "motorcycle bag": 9,
+        "touring bag": 8
+      },
+      "primary_use_cases": {
+        "short tours": 8,
+        "touring": 7,
+        "travel": 6
+      },
+      "key_features": {
+        "waterproof removable liner": 9,
+        "variable shoulder straps": 8,
+        "backpack carry option": 8,
+        "expandable storage": 8,
+        "folds compact": 7,
+        "U-shaped main opening": 6,
+        "helmet fits": 6,
+        "stable base": 5
+      },
+      "materials_quality": {
+        "TPU coating": 7,
+        "100% PES upper": 5,
+        "100% PA lining": 5
+      },
+      "weather_protection": {
+        "waterproof": 9,
+        "waterproof liner": 8,
+        "TPU coating": 7
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "35-42 litres": 9,
+        "expandable capacity": 8,
+        "41x30x30/35 cm": 6,
+        "small size": 5
+      },
+      "style_appearance": {
+        "black": 4,
+        "blue highlights": 3,
+        "reflective stripes": 4,
+        "Black Collection": 5
+      }
+    },
+    "description": "The Black Collection rear bag offers intelligent details such as a waterproof, removable liner and variable shoulder straps with the option of carrying it as a backpack. The storage space can be expanded from 35 to 42 litres and makes the bag, which folds down to a compact size on the stable base, the ideal companion for shorter tours.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YLqw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0025RM",
+    "name": "Black Collection tank bag, large",
+    "price": "£ 244.00",
+    "keywords": {
+      "product_type": {
+        "tank bag": 10,
+        "storage": 8
+      },
+      "primary_use_cases": {
+        "motorcycle touring": 7,
+        "daily riding": 6,
+        "long distance travel": 6
+      },
+      "key_features": {
+        "expandable volume": 8,
+        "removable liner": 7,
+        "cable duct": 7,
+        "touchable transparent compartment": 7,
+        "belt attachment": 6,
+        "exterior pocket": 5,
+        "roll closure": 5
+      },
+      "materials_quality": {
+        "TPU-coated PES": 7,
+        "durable": 6,
+        "100% PES upper": 4,
+        "100% PA lining": 4
+      },
+      "weather_protection": {
+        "waterproof": 9,
+        "waterproof liner": 8,
+        "waterproof transparent compartment": 7
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "11-16 litres": 9,
+        "large": 7,
+        "32x22x19/26 cm": 5
+      },
+      "style_appearance": {
+        "black": 4,
+        "blue highlights": 3,
+        "Black Collection": 5
+      }
+    },
+    "description": "The large Black Collection tank bag made of durable TPU-coated PES with a waterproof, removable liner and belt attachment offers intelligent details such as the cable duct or the waterproof, touchable transparent compartment. The storage space can be expanded from 11 to 16 litres. Extra space is available with the exterior pocket.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Yk3w1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0025S2",
+    "name": "Black Collection tank bag, small",
+    "price": "£ 149.00",
+    "keywords": {
+      "product_type": {
+        "tank bag": 10,
+        "storage": 8
+      },
+      "primary_use_cases": {
+        "short trip": 8,
+        "day trip": 8
+      },
+      "key_features": {
+        "belt attachment": 7,
+        "removable waterproof liner": 8,
+        "cable duct": 6,
+        "carry handle": 5,
+        "removable shoulder strap": 6,
+        "roll closure": 5
+      },
+      "materials_quality": {
+        "durable": 7,
+        "100% PES upper material": 4,
+        "100% PA lining": 4
+      },
+      "weather_protection": {
+        "waterproof liner": 8
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "5 litres": 9,
+        "25 x 20 x 10 cm": 6
+      },
+      "style_appearance": {
+        "black": 4,
+        "blue highlights": 3,
+        "Black Collection": 5
+      }
+    },
+    "description": "The small, durable Black Collection tank bag with belt attachment is the ideal companion for a short trip. The main compartment with removable waterproof liner, the cable duct, the storage space volume of 5. litres, the carry handle and the removable shoulder strap are handy qualities that leave almost nothing to be desired.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Y7Cw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0027EO",
+    "name": "Case holder for aluminium case, black",
+    "price": "£ 818.00",
+    "keywords": {
+      "product_type": {
+        "case holder": 10,
+        "mounting system": 8,
+        "storage accessory": 7
+      },
+      "primary_use_cases": {
+        "secure case installation": 9,
+        "electrical interface": 8,
+        "USB charging": 7
+      },
+      "key_features": {
+        "magnetic coupling": 9,
+        "easy installation": 8,
+        "secure mounting": 8,
+        "electrical interface": 7
+      },
+      "materials_quality": {
+        "aluminium die-cast alloy": 9,
+        "powder coating": 7,
+        "high-strength": 8
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "1980 grams weight": 4
+      },
+      "style_appearance": {
+        "Avus Black metallic matt": 6,
+        "perfect integration": 7,
+        "black": 5
+      }
+    },
+    "description": "The black case holders allow for easy and secure installation of the aluminium case. A magnetic coupling serves as the electrical interface for the USB charging interface in the left-hand case.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8RTYw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0025PJ",
+    "name": "Large Adventure Collection rear bag",
+    "price": "£ 244.00",
+    "keywords": {
+      "product_type": {
+        "rear bag": 10,
+        "backpack": 7,
+        "shoulder bag": 7
+      },
+      "primary_use_cases": {
+        "longer trips": 9,
+        "adventure": 8,
+        "touring": 7
+      },
+      "key_features": {
+        "expandable": 9,
+        "U-shaped opening": 8,
+        "versatile carrying options": 8,
+        "removable inner bag": 7,
+        "length-adjustable straps": 6,
+        "space-saving storage": 6
+      },
+      "materials_quality": {
+        "1680 ballistic nylon": 9,
+        "durable": 8,
+        "robust": 7
+      },
+      "weather_protection": {
+        "waterproof main compartment": 9
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "50-60 litres": 10,
+        "large": 8,
+        "60x35x29/34 cm": 6
+      },
+      "style_appearance": {
+        "olive": 4,
+        "black accents": 3,
+        "clean simple design": 5
+      }
+    },
+    "description": "The large Adventure Collection rear bag made of durable nylon fabric can be expanded from 50 to 60 litres – ideal for longer trips. It can be mounted on the luggage carrier or passenger seat with retaining straps. The rear bag can also be used as a backpack or shoulder bag. Space-saving storage when not in use.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Ygnw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0026RB",
+    "name": "Liner for aluminium topcase",
+    "price": "£ 112.00",
+    "keywords": {
+      "product_type": {
+        "liner": 10,
+        "topcase_liner": 9,
+        "storage_liner": 8
+      },
+      "primary_use_cases": {
+        "luggage_transport": 8,
+        "convenient_transport": 7,
+        "packing": 6
+      },
+      "key_features": {
+        "extra_wide_opening": 8,
+        "carry_handle": 7,
+        "shoulder_strap": 7,
+        "quick_release_buckle": 6,
+        "adjustable_volume": 6,
+        "precisely_fitting": 7
+      },
+      "materials_quality": {
+        "waterproof_design": 8,
+        "aluminium_topcase_compatible": 7
+      },
+      "weather_protection": {
+        "waterproof": 9
+      },
+      "bike_compatibility": {
+        "R_1300_GS": 10,
+        "R_1300_GS_Adventure": 10
+      },
+      "capacity_size": {
+        "small_topcase": 6,
+        "adjustable_volume": 5,
+        "large_opening": 4
+      },
+      "style_appearance": {
+        "black": 3,
+        "BMW_Motorrad_inscription": 4
+      }
+    },
+    "description": "The waterproof liner makes transporting luggage with the small, aluminium topcase even easier and more secure. Thanks to its extra-wide opening, it’s easy to pack, and its carry handle and shoulder strap allow luggage items to be conveniently transported even outside of the topcase.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Xkyw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI00267D",
+    "name": "Liner for Vario case",
+    "price": "£ 224.00",
+    "keywords": {
+      "product_type": {
+        "liner": 10,
+        "case_liner": 9,
+        "storage_organizer": 8
+      },
+      "primary_use_cases": {
+        "luggage_organization": 8,
+        "travel_storage": 7,
+        "mobile_device_protection": 6
+      },
+      "key_features": {
+        "padded_compartment": 9,
+        "volume_expansion": 8,
+        "three_sided_zip": 7,
+        "space_saving_fold": 6,
+        "reinforced_base": 7,
+        "made_to_measure": 8
+      },
+      "materials_quality": {
+        "robust_1680D_PES": 9,
+        "reinforced_base_panel": 8,
+        "robust_material": 7
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R_1300_GS": 10,
+        "Vario_case": 10
+      },
+      "capacity_size": {
+        "two_compartments": 8,
+        "main_pocket_38x23-29x22cm": 7,
+        "additional_pocket_32x16-22x5cm": 6,
+        "expandable_volume": 7
+      },
+      "style_appearance": {
+        "black": 3,
+        "grey_lining": 3
+      }
+    },
+    "description": "The made-to-measure liner for the Vario case wins users over with its robust material and a reinforced base panel. Includes a main pocket and a smaller additional pocket. This is the ideal way to use up the space in the case. The left main pocket has a padded compartment for a smartphone or tablet.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XLXw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI00267E",
+    "name": "Liner for Vario topcase",
+    "price": "£ 112.00",
+    "keywords": {
+      "product_type": {
+        "liner": 10,
+        "topcase liner": 9,
+        "storage": 8
+      },
+      "primary_use_cases": {
+        "luggage organization": 7,
+        "packing": 6,
+        "travel storage": 6
+      },
+      "key_features": {
+        "three-sided all-round zip": 8,
+        "mesh separator": 7,
+        "zippered compartment in lid": 7,
+        "carrying handles": 6,
+        "folds to save space": 6,
+        "stiffened luggage compartment removable panel": 5,
+        "expandable volume": 7
+      },
+      "materials_quality": {
+        "robust 1680D PES": 8,
+        "robust material": 7,
+        "durable construction": 6
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "Vario topcase": 10
+      },
+      "capacity_size": {
+        "33 x 22-28 x 21 cm": 8,
+        "expandable": 6,
+        "optimum space utilization": 5
+      },
+      "style_appearance": {
+        "black": 3,
+        "grey lining": 2
+      }
+    },
+    "description": "The precisely fitting liner for the Vario topcase is particularly easy to load thanks to the robust material and the stiffened luggage compartment removable panel. It features a zip fastener that allows you to expand the volume of the bag made of robust materials. Practical details such as carrying handles, a mesh partition and a compartment in the lid allow for versatile use.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XLWw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0026RK",
+    "name": "Luggage plate",
+    "price": "£ 145.00",
+    "keywords": {
+      "product_type": {
+        "luggage plate": 10,
+        "storage": 9
+      },
+      "primary_use_cases": {
+        "solo trips": 8,
+        "luggage transport": 7
+      },
+      "key_features": {
+        "lashing eyes": 8,
+        "secure fastening": 7,
+        "pillion seat connection": 7,
+        "small compartment": 6,
+        "easy attachment": 5,
+        "flat loading surface": 6
+      },
+      "materials_quality": {
+        "impact-resistant plastic": 7,
+        "915g weight": 4
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "5kg payload": 8,
+        "20kg with side luggage": 9
+      },
+      "style_appearance": {
+        "black grained": 3,
+        "silver-painted cover": 3
+      }
+    },
+    "description": "Luggage can be securely lashed to the luggage plate made of impact-resistant plastic. The plate uses the connection of the pillion seat and is easy to attach. Combined with the Vario cases, this creates a wide, flat loading surface. The payload is 5 kg, and with luggage attached to the side, 20 kg can be added.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XkLw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI00284P",
+    "name": "Luggage roll 40 l",
+    "price": "£ 105.00",
+    "keywords": {
+      "product_type": {
+        "luggage roll": 9,
+        "storage": 8,
+        "bag": 6
+      },
+      "primary_use_cases": {
+        "touring": 9,
+        "off-road tours": 8,
+        "on-road tours": 8,
+        "weekend away": 7,
+        "motorcycle travel": 8,
+        "2-3 day journey": 7
+      },
+      "key_features": {
+        "quick mounting": 8,
+        "easy attachment": 8,
+        "fastening straps": 7,
+        "shoulder strap": 6,
+        "outer pocket": 6,
+        "adjustable lashing straps": 5,
+        "carrying handle": 5,
+        "universally applicable": 7
+      },
+      "materials_quality": {
+        "robust": 8,
+        "durable": 8,
+        "1680D polyester": 6,
+        "TPU coating": 6,
+        "BMW Motorrad branding": 5
+      },
+      "weather_protection": {
+        "waterproof": 9,
+        "dirt-resistant": 8,
+        "dust-protected": 7,
+        "splash-proof": 7,
+        "moisture protection": 8
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "40 litres": 9,
+        "generous volume": 8,
+        "55 x 28 x 52 cm": 6,
+        "large compartment": 7
+      },
+      "style_appearance": {
+        "silver": 3,
+        "black accents": 3,
+        "matt grey lettering": 2,
+        "BMW Motorrad branding": 4
+      }
+    },
+    "description": "The robust luggage roll 40 is the ideal companion for off-road and on-road tours. With a volume of 40 litres, it offers sufficient space for luggage. Its durable and waterproof material reliably protects your luggage from moisture and dirt. Thanks to the sophisticated fastening straps, the roll can be quickly and easily attached to the motorbike.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8tQuw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI00284Q",
+    "name": "Luggage roll 60 l",
+    "price": "£ 115.00",
+    "keywords": {
+      "product_type": {
+        "luggage roll": 10,
+        "storage bag": 8,
+        "travel bag": 7
+      },
+      "primary_use_cases": {
+        "off-road tours": 8,
+        "on-road tours": 8,
+        "longer trips": 7,
+        "multi-day travel": 8
+      },
+      "key_features": {
+        "quick mounting": 8,
+        "easy attachment": 8,
+        "shoulder strap": 6,
+        "outer pocket": 5,
+        "carabiners": 5,
+        "fastening straps": 7,
+        "adjustable lashing straps": 6,
+        "compression": 5
+      },
+      "materials_quality": {
+        "robust": 8,
+        "durable": 8,
+        "1680D polyester": 7,
+        "TPU coating": 7,
+        "BMW Motorrad branding": 6
+      },
+      "weather_protection": {
+        "waterproof": 9,
+        "dirt-resistant": 8,
+        "splash-proof": 7,
+        "dust-protected": 6,
+        "moisture protection": 8
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10,
+        "universally applicable": 8,
+        "motorbike": 9
+      },
+      "capacity_size": {
+        "60 litres": 10,
+        "7 days luggage": 9,
+        "5-7 day journey": 8,
+        "60 x 34 x 58 cm": 6,
+        "generous volume": 7
+      },
+      "style_appearance": {
+        "silver": 3,
+        "black accents": 3,
+        "matt grey lettering": 2,
+        "BMW Motorrad branding": 4
+      }
+    },
+    "description": "The robust luggage roll 60 is the ideal companion for off-road and on-road tours. With a volume of 60 litres, it offers enough space for longer trips. Its durable and waterproof material reliably protects your luggage from moisture and dirt. Thanks to the sophisticated fastening straps, the roll can be quickly and easily attached to the motorbike.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8tQGw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI002875",
+    "name": "Luggage roll transport net",
+    "price": "£ 27.00",
+    "keywords": {
+      "product_type": {
+        "transport net": 9,
+        "luggage accessory": 8,
+        "storage expansion": 7
+      },
+      "primary_use_cases": {
+        "additional luggage transport": 8,
+        "storage expansion": 7,
+        "luggage attachment": 6
+      },
+      "key_features": {
+        "quick attachment": 8,
+        "carabiner system": 7,
+        "secure hold": 8,
+        "elasticated mesh": 6,
+        "space-saving storage": 5,
+        "carry handle compatibility": 4
+      },
+      "materials_quality": {
+        "highly elasticated": 5,
+        "mesh construction": 4
+      },
+      "weather_protection": {
+        "wet gear storage": 6,
+        "ProRain compatible": 5
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10,
+        "luggage roll 60": 9
+      },
+      "capacity_size": {
+        "48 x 30 cm": 6,
+        "expandable storage": 5
+      },
+      "style_appearance": {
+        "black color": 2
+      }
+    },
+    "description": "The transport net is the ideal addition to the luggage roll 60. It expands the storage space and offers a simple, quick and secure attachment for additional luggage. It can be attached quickly and easily thanks to the carabiners provided and also holds a wet ProRain overall securely in place, for example.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8tLww1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI00272B",
+    "name": "Silver aluminium cases, 36.5 l + 37 l, electrified",
+    "price": "£ 1,117.00",
+    "keywords": {
+      "product_type": {
+        "aluminium cases": 10,
+        "storage": 9,
+        "panniers": 8
+      },
+      "primary_use_cases": {
+        "long trips": 9,
+        "touring": 8,
+        "adventure riding": 7
+      },
+      "key_features": {
+        "USB-C charging port": 9,
+        "integrated charging": 8,
+        "quick fitting": 7,
+        "G-hook": 6,
+        "easy handling": 5
+      },
+      "materials_quality": {
+        "high-quality": 8,
+        "sturdy": 8,
+        "aluminium": 7,
+        "durable": 6
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "73 litres total": 9,
+        "37 litres": 8,
+        "36.5 litres": 8,
+        "10 kg load capacity": 8,
+        "helmet storage": 7
+      },
+      "style_appearance": {
+        "silver": 4,
+        "BMW Motorrad inscription": 3
+      }
+    },
+    "description": "The sturdy aluminium cases boast 73 litres of space. Practical details such as an integrated USB-C charging port, a load capacity of up to 10 kg per side and enough space for a helmet make them particularly ideal for long trips.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8RWyw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0025PI",
+    "name": "Small Adventure Collection rear bag",
+    "price": "£ 208.00",
+    "keywords": {
+      "product_type": {
+        "rear bag": 10,
+        "backpack": 7,
+        "shoulder bag": 7,
+        "storage": 8
+      },
+      "primary_use_cases": {
+        "shorter trips": 9,
+        "adventure": 8,
+        "travel": 7
+      },
+      "key_features": {
+        "expandable": 8,
+        "U-shaped opening": 7,
+        "multiple carrying options": 8,
+        "space-saving storage": 6,
+        "removable inner bag": 6,
+        "zippered side compartments": 6,
+        "adjustable straps with hooks": 7
+      },
+      "materials_quality": {
+        "1680 ballistic nylon": 8,
+        "durable": 7,
+        "robust": 7
+      },
+      "weather_protection": {
+        "waterproof main compartment": 9
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "37-42 litres": 9,
+        "45x35x29/34 cm": 6
+      },
+      "style_appearance": {
+        "olive with black accents": 4,
+        "clean simple design": 5
+      }
+    },
+    "description": "The small Adventure Collection rear bag made of durable nylon fabric can be expanded from 37 to 42 litres – ideal for shorter trips. It can be mounted on the luggage carrier or passenger seat with retaining straps. The rear bag can also be used as a backpack or shoulder bag. Space-saving storage when not in use.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Ygmw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0025UZ",
+    "name": "Soulfuel Collection rear bag, green, large, 50–60 l",
+    "price": "£ 378.00",
+    "keywords": {
+      "product_type": {
+        "rear bag": 10,
+        "storage": 8,
+        "motorcycle bag": 9
+      },
+      "primary_use_cases": {
+        "longer trips": 8,
+        "touring": 7,
+        "travel": 6
+      },
+      "key_features": {
+        "compartment for wet laundry": 8,
+        "compartment for shoes": 7,
+        "rucksack-carrying function": 8,
+        "U-shaped opening": 6,
+        "zip compartments": 5,
+        "anti-slip coating": 5,
+        "adjustable retaining straps": 6,
+        "retaining tab for luggage carrier": 7
+      },
+      "materials_quality": {
+        "recycled polyester": 7,
+        "leather": 6,
+        "waterproof inner bag": 7,
+        "100% PES recyclate": 6
+      },
+      "weather_protection": {
+        "waterproof": 9
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10,
+        "luggage carrier": 8,
+        "passenger seat": 7
+      },
+      "capacity_size": {
+        "50-60 l": 9,
+        "large": 8,
+        "60 x 35 x 29/34 cm": 6
+      },
+      "style_appearance": {
+        "retro look": 6,
+        "green": 4,
+        "black leather": 3,
+        "Soulfuel Collection": 5
+      }
+    },
+    "description": "The large rear bag of the Soulfuel Collection made from recycled polyester and leather is ideal for longer trips. Depending on the bike model, it can be mounted on the luggage carrier or passenger seat. Practical features, like a compartment for wet laundry or shoes and rucksack-carrying function, make it a versatile companion.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YI9w1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0025UY",
+    "name": "Soulfuel Collection rear bag, green, small, 35–42 l",
+    "price": "£ 340.00",
+    "keywords": {
+      "product_type": {
+        "rear bag": 10,
+        "storage": 8,
+        "motorcycle bag": 9
+      },
+      "primary_use_cases": {
+        "weekend trips": 8,
+        "touring": 7,
+        "travel": 6
+      },
+      "key_features": {
+        "rucksack carrying function": 8,
+        "wet compartment": 8,
+        "U-shaped opening": 7,
+        "adjustable retaining straps": 7,
+        "zip compartments": 6,
+        "anti-slip coating": 5,
+        "retaining tab": 4
+      },
+      "materials_quality": {
+        "recycled polyester": 8,
+        "leather": 7,
+        "recyclate": 6,
+        "PES": 4
+      },
+      "weather_protection": {
+        "waterproof": 9,
+        "waterproof inner bag": 8
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10,
+        "luggage carrier mount": 9,
+        "passenger seat mount": 8
+      },
+      "capacity_size": {
+        "35-42 l": 9,
+        "small": 7,
+        "45 x 35 x 29/34 cm": 6
+      },
+      "style_appearance": {
+        "green": 6,
+        "retro look": 7,
+        "black leather": 5,
+        "black lining": 3
+      }
+    },
+    "description": "The small rear bag of the Soulfuel Collection made from recycled polyester and leather is ideal for weekend trips. Depending on the bike model, it can be mounted on the luggage carrier or passenger seat. Practical features, like a compartment for wet laundry or shoes and rucksack-carrying function, make it a versatile companion.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YIrw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0026DX",
+    "name": "Soulfuel Collection rucksack, green, 20 l",
+    "price": "£ 149.00",
+    "keywords": {
+      "product_type": {
+        "rucksack": 10,
+        "backpack": 9,
+        "motorcycle_rucksack": 10
+      },
+      "primary_use_cases": {
+        "commuting": 8,
+        "day_trips": 7,
+        "work": 7,
+        "laptop_carry": 8
+      },
+      "key_features": {
+        "waterproof_main_compartment": 9,
+        "laptop_compartment": 8,
+        "roll_closure": 7,
+        "ergonomic_design": 7,
+        "adjustable_straps": 6,
+        "outer_pockets": 6,
+        "mesh_pocket": 5,
+        "two_way_zip": 5
+      },
+      "materials_quality": {
+        "recycled_polyester": 8,
+        "leather": 7,
+        "sustainable": 7,
+        "durable": 6
+      },
+      "weather_protection": {
+        "waterproof": 9,
+        "water_repellent": 8
+      },
+      "bike_compatibility": {
+        "R_1300_GS": 10,
+        "R_1300_GS_Adventure": 10
+      },
+      "capacity_size": {
+        "20_liters": 9,
+        "15_inch_laptop": 8,
+        "40x30x16_cm": 6
+      },
+      "style_appearance": {
+        "green": 4,
+        "black": 3,
+        "Soulfuel_Collection": 5
+      }
+    },
+    "description": "Made from recycled polyester and leather, the Soulfuel Collection rucksack is the perfect size for commuting to work or day trips. Laptops up to 15\" in size can find space in the waterproof main compartment with roll closure. Two outer pockets provide quick access to personal items.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XbUw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0025UK",
+    "name": "Soulfuel Collection tank bag, green, black, 11–16 l",
+    "price": "£ 297.00",
+    "keywords": {
+      "product_type": {
+        "tank bag": 10,
+        "storage": 8
+      },
+      "primary_use_cases": {
+        "motorcycle touring": 7,
+        "daily riding": 6,
+        "luggage transport": 7
+      },
+      "key_features": {
+        "expandable volume": 8,
+        "cable port": 7,
+        "removable liner": 6,
+        "roll closure": 5,
+        "lid pocket": 6,
+        "quick access": 5,
+        "strap attachment": 4
+      },
+      "materials_quality": {
+        "recycled polyester": 7,
+        "leather": 6,
+        "recyclate": 5,
+        "durable construction": 5
+      },
+      "weather_protection": {
+        "waterproof main compartment": 9,
+        "waterproof liner": 8,
+        "waterproof transparent compartment": 7
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "11-16 litres": 9,
+        "expandable": 8,
+        "5kg payload": 6,
+        "24x33x15cm": 4
+      },
+      "style_appearance": {
+        "retro look": 6,
+        "simple design": 5,
+        "green": 4,
+        "black": 4,
+        "soulfuel collection": 3
+      }
+    },
+    "description": "The large tank bag from the Soulfuel Collection is made from recycled polyester and leather. It can be expanded from 11 to 16 litres. Useful features include the cable port, the waterproof main compartment with liner, the waterproof transparent compartment and the lid pocket for items that need to be quickly at hand.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YILw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0025UT",
+    "name": "Soulfuel Collection tank bag, green, small, 5 l",
+    "price": "£ 179.00",
+    "keywords": {
+      "product_type": {
+        "tank bag": 10,
+        "storage": 8
+      },
+      "primary_use_cases": {
+        "short trip": 7,
+        "touring": 6
+      },
+      "key_features": {
+        "cable port": 8,
+        "waterproof main compartment": 9,
+        "removable liner": 7,
+        "roll closure": 6,
+        "lid pocket": 7,
+        "zip closure": 5,
+        "strap attachment": 6
+      },
+      "materials_quality": {
+        "recycled polyester": 7,
+        "leather": 6,
+        "PES recyclate": 5,
+        "100% PES": 4
+      },
+      "weather_protection": {
+        "waterproof": 9,
+        "waterproof liner": 8
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "5 litres": 9,
+        "small": 7,
+        "compact": 6,
+        "21 x 26 x 13 cm": 5
+      },
+      "style_appearance": {
+        "green": 6,
+        "retro look": 7,
+        "simple": 5,
+        "black leather": 4,
+        "Soulfuel Collection": 6
+      }
+    },
+    "description": "The small waterproof tank bag from the Soulfuel Collection is made from recycled polyester and leather and, with a volume of 5 litres, is the perfect companion for a short trip. Useful features include the cable port, the waterproof main compartment with liner and the lid pocket for items that need to be quickly at hand.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YI5w1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0025QQ",
+    "name": "Urban Collection backpack, white, 20 l",
+    "price": "£ 99.00",
+    "keywords": {
+      "product_type": {
+        "backpack": 10,
+        "motorcycle_backpack": 9,
+        "urban_collection": 8
+      },
+      "primary_use_cases": {
+        "commute": 8,
+        "day_trip": 8,
+        "work": 7
+      },
+      "key_features": {
+        "waterproof_main_compartment": 9,
+        "laptop_section": 8,
+        "rolltop_closure": 7,
+        "ergonomic_back_panel": 6,
+        "adjustable_straps": 6,
+        "reflective_strips": 5,
+        "carry_handle": 4
+      },
+      "materials_quality": {
+        "high_quality": 8,
+        "polyamide_tpu_coating": 7,
+        "rubber_coated_zip": 6,
+        "functional": 6
+      },
+      "weather_protection": {
+        "waterproof": 9,
+        "water_repellent": 8,
+        "splash_proof": 7
+      },
+      "bike_compatibility": {
+        "R_1300_GS": 10,
+        "R_1300_GS_Adventure": 10
+      },
+      "capacity_size": {
+        "20_litre": 8,
+        "15_inch_laptop": 7,
+        "40x30x16_cm": 5
+      },
+      "style_appearance": {
+        "white": 6,
+        "simple_design": 5,
+        "light_coloured_fabrics": 4,
+        "coloured_lining": 3
+      }
+    },
+    "description": "The Urban Collection backpack is the ideal companion for a day trip or the commute to work, featuring a range of practical functions. The waterproof main compartment with rolltop closure includes a laptop section (up to 15”). Two outer pockets provide practical storage for items that need to be easily accessible.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YVGw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI00257I",
+    "name": "Urban Collection rear bag, large",
+    "price": "£ 244.00",
+    "keywords": {
+      "product_type": {
+        "rear bag": 9,
+        "storage": 8
+      },
+      "primary_use_cases": {
+        "urban riding": 7,
+        "helmet storage": 8,
+        "touring": 6
+      },
+      "key_features": {
+        "expandable volume": 9,
+        "generous opening": 7,
+        "adjustable retaining straps": 6,
+        "buckles": 5,
+        "coloured lining": 5,
+        "stowable handles": 6
+      },
+      "materials_quality": {
+        "robust materials": 7,
+        "polyamide": 6,
+        "TPU coating": 6,
+        "PES lining": 4
+      },
+      "weather_protection": {
+        "TPU coating": 6
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "50 litres": 8,
+        "60 litres": 9,
+        "60x35x29 cm": 6,
+        "60x35x34 cm": 6,
+        "large": 7
+      },
+      "style_appearance": {
+        "stylish": 8,
+        "urban collection": 7,
+        "coloured lining": 4
+      }
+    },
+    "description": "The large Urban Collection rear bag looks just as stylish off the bike. Thanks to a generous opening there is room for a helmet in the main compartment. The bag can be secured to the vehicle using the adjustable retaining straps with buckles. Particularly practical: the zip for expanding the volume to 60 litres.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YLmw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI00257H",
+    "name": "Urban Collection rear bag, small",
+    "price": "£ 208.00",
+    "keywords": {
+      "product_type": {
+        "rear bag": 9,
+        "storage": 8
+      },
+      "primary_use_cases": {
+        "urban riding": 7,
+        "helmet storage": 8
+      },
+      "key_features": {
+        "expandable volume": 8,
+        "generous opening": 7,
+        "adjustable retaining straps": 6,
+        "buckles": 5,
+        "stowable handles": 6,
+        "large carry handle": 6,
+        "coloured lining": 4
+      },
+      "materials_quality": {
+        "robust materials": 7,
+        "polyamide": 6,
+        "TPU coating": 6,
+        "PES lining": 5
+      },
+      "weather_protection": {
+        "TPU coating": 6
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "37 litres": 8,
+        "42 litres": 8,
+        "45 x 35 x 29/34 cm": 7
+      },
+      "style_appearance": {
+        "stylish": 8,
+        "urban collection": 7,
+        "stylish off bike": 7
+      }
+    },
+    "description": "The small Urban Collection rear bag looks just as stylish off the bike. Thanks to a generous opening there is room for a helmet in the main compartment. The bag can be secured to the vehicle using the adjustable retaining straps with buckles. Particularly practical: the zip for expanding the volume to 42 litres.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YLkw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0025PK",
+    "name": "Urban Collection tank bag, large",
+    "price": "£ 244.00",
+    "keywords": {
+      "product_type": {
+        "tank bag": 10,
+        "motorbike storage": 9,
+        "Urban Collection": 7
+      },
+      "primary_use_cases": {
+        "motorcycle touring": 8,
+        "daily commuting": 7,
+        "urban riding": 8,
+        "refueling convenience": 7
+      },
+      "key_features": {
+        "waterproof removable inner bag": 9,
+        "volume expansion": 8,
+        "touch sensitive transparent compartment": 8,
+        "cable aperture charging": 7,
+        "anti-slip foam padding": 8,
+        "strap attachment": 7,
+        "plug fasteners": 8,
+        "lockable zip": 6
+      },
+      "materials_quality": {
+        "100% polyamide TPU coating": 7,
+        "water-repellent": 7,
+        "two-way zip fastener": 6,
+        "100% PES lining": 5
+      },
+      "weather_protection": {
+        "waterproof": 9,
+        "water-repellent": 8
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "steeply sloping tank shapes": 10
+      },
+      "capacity_size": {
+        "11-16 litres": 9,
+        "24x33x15/22 cm": 7,
+        "5 kg payload": 8,
+        "large size": 8
+      },
+      "style_appearance": {
+        "simple design": 5,
+        "coloured inner lining": 4,
+        "Urban Collection styling": 6
+      }
+    },
+    "description": "The Urban Collection tank bag large for motorbikes with steeply sloping tank shapes impresses with its simple design and numerous functions. Thanks to the anti-slip foam padding on the underside and the strap attachment, the tank bag can be fastened easily and securely. Plug fasteners at the front and rear make refuelling easier.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YgLw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0025PL",
+    "name": "Urban Collection tank bag, small",
+    "price": "£ 149.00",
+    "keywords": {
+      "product_type": {
+        "tank bag": 10,
+        "storage": 9
+      },
+      "primary_use_cases": {
+        "urban riding": 8,
+        "motorcycle touring": 7,
+        "daily commuting": 6
+      },
+      "key_features": {
+        "removable inner bag": 8,
+        "anti-slip foam padding": 8,
+        "strap attachment": 7,
+        "plug fasteners": 7,
+        "cable aperture": 6,
+        "lockable zip": 6,
+        "top zipped pocket": 5
+      },
+      "materials_quality": {
+        "polyamide": 6,
+        "TPU coating": 6,
+        "PES lining": 4
+      },
+      "weather_protection": {
+        "watertight": 9,
+        "water-repellent": 8
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "5 litre": 8,
+        "25x20x10 cm": 7,
+        "small": 6
+      },
+      "style_appearance": {
+        "urban collection": 7,
+        "simple design": 5,
+        "coloured inner lining": 3
+      }
+    },
+    "description": "The small Urban Collection tank bag impresses with its simple design and numerous functions. Thanks to the anti-slip foam padding on the underside and the strap attachment, the tank bag can be fastened easily and securely. Plug fasteners at the front and rear make refuelling easier.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Ygaw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0025Y0",
+    "name": "Vario case, black, 25-32 l + 24-30 l",
+    "price": "£ 1,012.00",
+    "keywords": {
+      "product_type": {
+        "vario case": 10,
+        "storage": 8,
+        "panniers": 7
+      },
+      "primary_use_cases": {
+        "touring": 6,
+        "travel": 6,
+        "motorcycle storage": 7
+      },
+      "key_features": {
+        "central locking": 9,
+        "interior lighting": 8,
+        "USB charging port": 9,
+        "steplessly adjustable volume": 8,
+        "electrified": 9
+      },
+      "materials_quality": {
+        "plastic": 5,
+        "anodised aluminium": 7,
+        "10kg payload": 6
+      },
+      "weather_protection": {
+        "waterproof": 8
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "24-30 litres": 9,
+        "25-32 litres": 9,
+        "adjustable volume": 8
+      },
+      "style_appearance": {
+        "black": 4,
+        "colourless anodised": 3
+      }
+    },
+    "description": "Available from 2025. The black Vario cases for both sides impress with electrical functions such as central locking and interior lighting. There is also a USB charging port in the left case. The steplessly adjustable volume is 24 to 30 litres on the right and 25 to 32 litres on the left.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YhMw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0025Y2",
+    "name": "Vario topcase 28-36 l",
+    "price": "£ 605.00",
+    "keywords": {
+      "product_type": {
+        "topcase": 10,
+        "storage": 9,
+        "electrified": 8
+      },
+      "primary_use_cases": {
+        "motorcycle touring": 7,
+        "cargo transport": 6,
+        "long distance travel": 5
+      },
+      "key_features": {
+        "central locking": 9,
+        "steplessly adjustable volume": 9,
+        "USB charging port": 8,
+        "internal lighting": 8,
+        "rotary wheel adjustment": 7
+      },
+      "materials_quality": {
+        "anodised aluminium": 8,
+        "plastic construction": 6,
+        "6kg payload": 7
+      },
+      "weather_protection": {
+        "waterproof": 9,
+        "inner pocket required": 6
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "28-36 litres": 10,
+        "variable volume": 9
+      },
+      "style_appearance": {
+        "black colour": 4,
+        "aluminium covers eye-catcher": 7,
+        "colourless anodised finish": 5
+      }
+    },
+    "description": "With its 28–36 litres of space, the Vario topcase impresses with electrical functions such as central locking, light and USB charging port. The volume can be adjusted steplessly in just a few steps using a rotary wheel. The topcase is waterproof in connection with the optional inner pocket. The anodised aluminium covers are a real eye-catcher.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YhCw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0026DQ",
+    "name": "Enduro foot pegs",
+    "price": "£ 562.00",
+    "keywords": {
+      "product_type": {
+        "foot pegs": 10,
+        "enduro": 8,
+        "ergonomics": 6,
+        "comfort": 6
+      },
+      "primary_use_cases": {
+        "off-road": 9,
+        "standing position riding": 8,
+        "vehicle control": 7
+      },
+      "key_features": {
+        "wider tread area": 8,
+        "longer tread area": 8,
+        "non-slip footing": 8,
+        "more support": 7,
+        "improved vehicle control": 7,
+        "easy installation": 5,
+        "gearshift operability": 4,
+        "footbrake lever operability": 4
+      },
+      "materials_quality": {},
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {},
+      "style_appearance": {}
+    },
+    "description": "The Enduro foot pegs have a wider and longer tread area and therefore offer more support and a non-slip footing. This enables better vehicle control off-road and when riding in a standing position without restricting the operability of the gearshift and footbrake lever.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XbGw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Ergonomics & Comfort",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0025YD",
+    "name": "Low Sport windscreen, tinted",
+    "price": "£ 218.00",
+    "keywords": {
+      "product_type": {
+        "windscreen": 10,
+        "motorcycle windscreen": 9
+      },
+      "primary_use_cases": {
+        "enduro riding": 8,
+        "standing up riding": 7,
+        "sport riding": 6
+      },
+      "key_features": {
+        "aerodynamic efficiency": 9,
+        "clear view": 8,
+        "scratch resistant coating": 7,
+        "low profile": 6
+      },
+      "materials_quality": {
+        "scratch resistant": 7,
+        "special coating": 6
+      },
+      "weather_protection": {
+        "wind protection": 5
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "low height": 6
+      },
+      "style_appearance": {
+        "tinted": 8,
+        "sporty look": 7,
+        "enduro styling": 6
+      }
+    },
+    "description": "The low, tinted windscreen enhances the sporty Enduro look and provides a clear view, especially when riding standing up. Thanks to developments in the BMW wind tunnel, it also improves aerodynamic efficiency in comparison with the high windscreen. A special coating also reduces its susceptibility to scratches.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YhXw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Ergonomics & Comfort",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0025YC",
+    "name": "Low Sport windscreen, tinted",
+    "price": "£ 183.00",
+    "keywords": {
+      "product_type": {
+        "windscreen": 10,
+        "motorcycle_windscreen": 9
+      },
+      "primary_use_cases": {
+        "enduro_riding": 8,
+        "standing_riding": 7,
+        "sport_riding": 7
+      },
+      "key_features": {
+        "ACC_cut_out": 9,
+        "aerodynamic_efficiency": 8,
+        "scratch_resistant_coating": 7,
+        "clear_view": 7,
+        "low_profile": 6
+      },
+      "materials_quality": {
+        "special_coating": 6,
+        "scratch_resistance": 7
+      },
+      "weather_protection": {
+        "wind_protection": 5
+      },
+      "bike_compatibility": {
+        "R_1300_GS": 10
+      },
+      "capacity_size": {
+        "low_height": 6
+      },
+      "style_appearance": {
+        "tinted": 8,
+        "sporty_enduro_look": 9,
+        "low_profile_design": 7
+      }
+    },
+    "description": "The low, tinted windscreen with ACC cut-out section emphasises the sporty Enduro look and provides a clear view, especially when riding standing up. Thanks to developments in the BMW wind tunnel, it also improves aerodynamic efficiency in comparison with the high windscreen. A special coating also reduces its susceptibility to scratches.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Yhxw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Ergonomics & Comfort",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0026DS",
+    "name": "Windscreen tinted",
+    "price": "£ 253.00",
+    "keywords": {
+      "product_type": {
+        "windscreen": 10,
+        "tinted windscreen": 9
+      },
+      "primary_use_cases": {
+        "wind protection": 8,
+        "weather protection": 8,
+        "aerodynamics": 7
+      },
+      "key_features": {
+        "scratch-resistant coating": 8,
+        "excellent aerodynamics": 7,
+        "ACC lettering": 6,
+        "scratch-proof coating both sides": 8
+      },
+      "materials_quality": {
+        "scratch-resistant": 7,
+        "scratch-proof": 7,
+        "durability": 6
+      },
+      "weather_protection": {
+        "wind protection": 9,
+        "weather protection": 9
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "330mm x 320mm": 5,
+        "dimensions": 4
+      },
+      "style_appearance": {
+        "tinted": 8,
+        "sporty look": 8,
+        "individual appearance": 7,
+        "sporty": 7
+      }
+    },
+    "description": "The tinted windscreen emphasises the machine's sporty look. It combines excellent aerodynamics with excellent protection from wind and weather. The scratch-resistant coating on both sides increases durability. The \"ACC\" lettering rounds off the individual appearance.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XbIw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Ergonomics & Comfort",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI002591",
+    "name": "BMW Motorrad dual USB charger with 60 cm cable",
+    "price": "£ 46.00",
+    "keywords": {
+      "product_type": {
+        "dual USB charger": 10,
+        "charging accessory": 8,
+        "navigation communication equipment": 6
+      },
+      "primary_use_cases": {
+        "mobile device charging while riding": 9,
+        "smartphone charging": 8,
+        "simultaneous dual device charging": 8
+      },
+      "key_features": {
+        "Quick Charge 3.0": 9,
+        "Samsung AFC compatible": 8,
+        "Apple Quick Charge compatible": 8,
+        "automatic charging technology detection": 7,
+        "maximum charge current optimization": 7,
+        "thermal cutout protection": 6
+      },
+      "materials_quality": {
+        "waterproof construction": 7,
+        "overheating protection": 6
+      },
+      "weather_protection": {
+        "IP67 waterproof rating": 9,
+        "waterproof cable and plug": 8
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10,
+        "12V on-board power socket": 8
+      },
+      "capacity_size": {
+        "60 cm cable length": 7,
+        "dual device capacity": 6
+      },
+      "style_appearance": {}
+    },
+    "description": "Using the BMW Motorrad dual USB charger with a 60 cm long cable, two mobile devices can be charged simultaneously whilst riding. The charging technology supports Quick Charge 3.0, Samsung AFC and Apple Quick Charge. Smartphones can be charged even faster this way. The charger is connected to the 12V on-board power socket via a cable.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Y2Kw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Navigation & Communication",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0027SI",
+    "name": "ConnectedRide navigator",
+    "price": "£ 685.00",
+    "keywords": {
+      "product_type": {
+        "navigator": 10,
+        "GPS device": 9,
+        "navigation system": 8
+      },
+      "primary_use_cases": {
+        "route planning": 9,
+        "trip navigation": 9,
+        "motorcycle touring": 8,
+        "route synchronization": 7
+      },
+      "key_features": {
+        "BMW ConnectedRide": 10,
+        "5.5-inch touch display": 9,
+        "sunlight readable": 8,
+        "Multi-controller operation": 8,
+        "smartphone integration": 7,
+        "direct map updates": 7,
+        "BMW Motorrad app sync": 7,
+        "USB-C charging": 6
+      },
+      "materials_quality": {
+        "touch display": 6,
+        "BMW branded": 7
+      },
+      "weather_protection": {
+        "sunlight readable": 8
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "150x83x19mm": 5,
+        "309g weight": 4,
+        "5.5-inch screen": 7
+      },
+      "style_appearance": {
+        "black color": 3,
+        "sleek design": 4
+      }
+    },
+    "description": "You’ll have all your trips and plans to hand with the BMW ConnectedRide navigator. Use your BMW ID to synchronise your planned routes and notes with the BMW Motorrad app. The 5.5-inch touch display can also be read with ease in direct sunlight. Intuitive to operate using the Multi-controller.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8R7mw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Navigation & Communication",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0026QU",
+    "name": "ConnectedRide navigator protective glass",
+    "price": "£ 19.00",
+    "keywords": {
+      "product_type": {
+        "protective glass": 10,
+        "navigator accessory": 8,
+        "display protection": 9
+      },
+      "primary_use_cases": {
+        "navigation protection": 9,
+        "display safeguarding": 8
+      },
+      "key_features": {
+        "anti-glare surface": 8,
+        "anti-reflective coating": 8,
+        "scratch protection": 7,
+        "stone chip protection": 7,
+        "dirt protection": 6
+      },
+      "materials_quality": {
+        "hardened glass": 9,
+        "specially hardened": 8
+      },
+      "weather_protection": {
+        "dirt protection": 6
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "5.5-inch": 7
+      },
+      "style_appearance": {
+        "BMW emblem": 4,
+        "BMW badge": 4
+      }
+    },
+    "description": "The protective glass reliably protects the 5.5-inch navigation display from dirt, flying stones and damage. The hardened glass has an anti-glare and anti-reflective surface, so that the TFT display can be read easily. With BMW emblem.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XVfw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Navigation & Communication",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0025CA",
+    "name": "ConnectedRide Smartphone Cradle",
+    "price": "£ 254.00",
+    "keywords": {
+      "product_type": {
+        "smartphone cradle": 10,
+        "holder": 8,
+        "navigation device": 9
+      },
+      "primary_use_cases": {
+        "navigation": 9,
+        "map display": 7,
+        "vehicle data display": 6
+      },
+      "key_features": {
+        "wireless charging": 8,
+        "QI standard": 7,
+        "USB-C port": 6,
+        "BMW Motorrad Connected app": 9,
+        "Multi-Controller operation": 8,
+        "adjustable arms": 7,
+        "temperature sensor": 6,
+        "vibration decoupling": 7,
+        "lockable cradle": 5
+      },
+      "materials_quality": {
+        "integrated temperature sensor": 6,
+        "vibration decoupling": 7
+      },
+      "weather_protection": {
+        "overheating protection": 6
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10,
+        "navigation preparation": 10,
+        "option code 272": 10,
+        "Multi-Controller": 10
+      },
+      "capacity_size": {
+        "different smartphone sizes": 8,
+        "individually adjustable arms": 7
+      },
+      "style_appearance": {}
+    },
+    "description": "The ConnectedRide Cradle serves as a holder to use the smartphone as a navigation device while riding. The BMW Motorrad Connected app allows the navigation map and vehicle data to be accessed in the field of view via the Multi-Controller. The holder allows for different smartphone sizes and charges the smartphone inductively or wired.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YJDw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Navigation & Communication",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0025TH",
+    "name": "Extra socket",
+    "price": "£ 67.00",
+    "keywords": {
+      "product_type": {
+        "power_socket": 9,
+        "electrical_accessory": 8,
+        "12V_socket": 8
+      },
+      "primary_use_cases": {
+        "device_charging": 9,
+        "long_journeys": 7,
+        "electronic_device_connection": 8
+      },
+      "key_features": {
+        "12V_power": 9,
+        "while_riding_operation": 8,
+        "additional_socket": 7,
+        "bike_electrical_system_integration": 8
+      },
+      "materials_quality": {},
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R_1300_GS": 10
+      },
+      "capacity_size": {},
+      "style_appearance": {
+        "right_rear_frame_location": 4
+      }
+    },
+    "description": "Electronic devices can be connected to the bike’s electrical system via the additional 12V power socket. Your devices can now be operated or charged during long journeys.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Y%25kw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Navigation & Communication",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI002724",
+    "name": "Black, rear angular gearbox protection",
+    "price": "£ 67.00",
+    "keywords": {
+      "product_type": {
+        "gearbox protection": 10,
+        "protective cover": 9,
+        "safety accessory": 7
+      },
+      "primary_use_cases": {
+        "damage protection": 9,
+        "exposed area protection": 8
+      },
+      "key_features": {
+        "sturdy construction": 8,
+        "lightweight design": 7,
+        "easy installation": 6,
+        "180 gram weight": 5
+      },
+      "materials_quality": {
+        "fibre-reinforced plastic": 8,
+        "high-quality workmanship": 7,
+        "sturdy": 6
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {},
+      "style_appearance": {
+        "black grained": 4,
+        "BMW Motorrad inscription": 4,
+        "eye-catcher": 3,
+        "rear angular": 2
+      }
+    },
+    "description": "The protective cover for the rear angular gearbox protects this exposed area from damage. Not only is the cover sturdy – it’s also extra leightweight. Its high-quality workmanship and BMW Motorrad inscription also definitely make it a real eye-catcher.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8RWhw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Safety",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0026RM",
+    "name": "Carbon cylinder guard",
+    "price": "£ 1,079.00",
+    "keywords": {
+      "product_type": {
+        "cylinder guard": 10,
+        "engine guard": 8,
+        "protection": 7
+      },
+      "primary_use_cases": {
+        "cylinder protection": 9,
+        "safety": 7,
+        "weight saving": 8
+      },
+      "key_features": {
+        "hand-laminated": 8,
+        "forged carbon": 9,
+        "unchanged bank-angle clearance": 8,
+        "lightweight alternative": 8,
+        "robust protection": 9
+      },
+      "materials_quality": {
+        "carbon": 9,
+        "hand-laminated": 8,
+        "robust": 8,
+        "high-quality": 7
+      },
+      "weather_protection": {
+        "UV-resistant": 7
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "1100g weight": 6
+      },
+      "style_appearance": {
+        "eye-catching look": 7,
+        "carbon wind deflectors compatibility": 6,
+        "visually appealing": 6
+      }
+    },
+    "description": "The high-quality carbon cylinder guard combines an eye-catching look with excellent functionality. The hand-laminated forged carbon is particularly robust and UV-resistant. The cylinder guard is a weight-saving alternative to the stainless-steel engine guard and does not restrict bank-angle clearance.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Xk3w1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Safety",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI00265B",
+    "name": "Cylinder-head cover guard",
+    "price": "£ 258.00",
+    "keywords": {
+      "product_type": {
+        "guard": 10,
+        "cover": 8,
+        "protection": 9
+      },
+      "primary_use_cases": {
+        "scratch protection": 9,
+        "flying stone protection": 8,
+        "cylinder head protection": 10
+      },
+      "key_features": {
+        "rubber buffer": 7,
+        "scratch protection": 9,
+        "stone protection": 8,
+        "impact protection": 7
+      },
+      "materials_quality": {
+        "stainless steel": 9,
+        "rubber buffer": 7,
+        "premium construction": 6
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "boxer engine": 10
+      },
+      "capacity_size": {},
+      "style_appearance": {
+        "visual enhancement": 6,
+        "design matched": 7,
+        "refinement": 5,
+        "aesthetic integration": 6
+      }
+    },
+    "description": "The stainless-steel cylinder-head cover guard protects the cylinder head cover from scratches and flying stones. In addition, it is equipped with a large rubber buffer on the inside. Visually, the cylinder-head cover guard is perfectly matched to the design and lines of the boxer engine.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XAyw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Safety",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0026RL",
+    "name": "Enduro aluminium engine guard, silver",
+    "price": "£ 305.00",
+    "keywords": {
+      "product_type": {
+        "engine guard": 10,
+        "protection": 8,
+        "safety": 6
+      },
+      "primary_use_cases": {
+        "off-road biking": 9,
+        "stone chip protection": 8,
+        "engine protection": 7
+      },
+      "key_features": {
+        "robust": 8,
+        "lightweight": 8,
+        "wider than standard": 7,
+        "longer than standard": 7,
+        "improved protection": 6
+      },
+      "materials_quality": {
+        "aluminium": 9,
+        "2.5 millimetres thick": 7,
+        "robust": 8,
+        "lightweight": 7
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "2.5 millimetres thick": 6,
+        "wider": 5,
+        "longer": 5
+      },
+      "style_appearance": {
+        "silver": 4,
+        "distinctive off-road look": 6,
+        "special shape": 5
+      }
+    },
+    "description": "The robust and lightweight Enduro engine guard made of aluminium protects the lower part of the engine against stone chips and damage. Specially designed for off-road biking, the aluminium engine guard is 2.5 millimetres thick, considerably wider and longer than the standard engine guard. The special shape emphasises the off-road look of the motorcycle.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Xkaw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Safety",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0026JX",
+    "name": "Engine protection bar, silver",
+    "price": "£ 796.00",
+    "keywords": {
+      "product_type": {
+        "engine protection bar": 10,
+        "protection bar": 9,
+        "safety equipment": 7
+      },
+      "primary_use_cases": {
+        "off-road protection": 8,
+        "asphalt protection": 8,
+        "fall damage prevention": 7,
+        "crash protection": 6
+      },
+      "key_features": {
+        "robust construction": 9,
+        "leg protection": 8,
+        "freedom to lean": 7,
+        "hard knock resistance": 7,
+        "two-piece design": 6
+      },
+      "materials_quality": {
+        "stainless steel": 9,
+        "polished stainless steel": 8,
+        "robust tube construction": 8,
+        "premium materials": 6
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {},
+      "style_appearance": {
+        "silver": 6,
+        "racing design integration": 5,
+        "polished finish": 4
+      }
+    },
+    "description": "The silver, robust engine protection bars, made of polished stainless steel, reliably protect the bike against damage without restricting the rider's freedom to lean the machine. The robust tube construction will even take hard knocks and prevent major fall damage off-road and on asphalt.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XwUw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Safety",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0026RJ",
+    "name": "Headlight guard",
+    "price": "£ 104.00",
+    "keywords": {
+      "product_type": {
+        "headlight guard": 10,
+        "safety accessory": 8,
+        "protective component": 7
+      },
+      "primary_use_cases": {
+        "off-road use": 9,
+        "adventure riding": 7,
+        "damage prevention": 8
+      },
+      "key_features": {
+        "quick coupling": 8,
+        "easy attach detach": 7,
+        "damage prevention": 9,
+        "robust construction": 7
+      },
+      "materials_quality": {
+        "impact-resistant plastic": 8,
+        "scratch-resistant": 7,
+        "robust": 6
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {
+        "215g weight": 4
+      },
+      "style_appearance": {}
+    },
+    "description": "The robust headlight guard prevents damage during off-road use. A quick coupling makes it easy to attach and detach. The component is made of impact-resistant and scratch-resistant plastic, making it ideal for off-road use.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Xknw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Safety",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0025E4",
+    "name": "Protective glass TFT display 6.5 inch",
+    "price": "£ 46.00",
+    "keywords": {
+      "product_type": {
+        "protective glass": 10,
+        "display protection": 9,
+        "screen protector": 8
+      },
+      "primary_use_cases": {
+        "display protection": 9,
+        "scratch prevention": 8,
+        "stone chip protection": 8,
+        "dirt protection": 7
+      },
+      "key_features": {
+        "anti-glare surface": 8,
+        "anti-reflective surface": 8,
+        "hardened glass": 8,
+        "easy readability": 7
+      },
+      "materials_quality": {
+        "specially hardened": 8,
+        "protective glass": 7
+      },
+      "weather_protection": {
+        "dirt protection": 6
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "6.5 inch": 9
+      },
+      "style_appearance": {
+        "BMW Motorrad inscription": 4
+      }
+    },
+    "description": "The protective glass reliably protects the 6.5-inch TFT display from dirt, flying stones and damage. The hardened glass has an anti-glare and anti-reflective surface, so that the TFT display can be read easily. With BMW Motorrad inscription.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YThw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Safety",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0027MW",
+    "name": "Trophy aluminium engine guard",
+    "price": "£ 327.00",
+    "keywords": {
+      "product_type": {
+        "engine guard": 10,
+        "protection": 9,
+        "safety": 8
+      },
+      "primary_use_cases": {
+        "off-road adventures": 9,
+        "ambitious off-road use": 8,
+        "enduro": 7
+      },
+      "key_features": {
+        "extreme protection": 10,
+        "significantly increased safety": 9,
+        "reinforced side sections": 8,
+        "maximum resilience": 7,
+        "additional protection against stone chips": 6
+      },
+      "materials_quality": {
+        "aluminium": 9,
+        "sturdy aluminium structure": 8,
+        "blasted and colourless anodised": 7,
+        "withstands harshest conditions": 8
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS": 10
+      },
+      "capacity_size": {},
+      "style_appearance": {
+        "distinctive off-road look": 6,
+        "adventurous spirit": 4
+      }
+    },
+    "description": "Extreme protection for ambitious off-road adventures. The Trophy aluminium enduro engine guard with reinforced side sections offers significantly increased safety for the engine, exhaust manifold and foot lever. The blasted and colourless anodised material withstands the harshest conditions and gives the bike a distinctive off-road look.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8RUJw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Safety",
+    "compatible_bikes": [
+      "R 1300 GS"
+    ]
+  },
+  {
+    "id": "EI0025CZ",
+    "name": "Vehicle cover",
+    "price": "£ 58.00",
+    "keywords": {
+      "product_type": {
+        "vehicle cover": 10,
+        "bike cover": 9,
+        "motorcycle cover": 9
+      },
+      "primary_use_cases": {
+        "protection": 9,
+        "storage": 7,
+        "outdoor protection": 8
+      },
+      "key_features": {
+        "waterproof": 9,
+        "ventilation openings": 7,
+        "viewing window": 7,
+        "drawstrings": 6,
+        "metal eyelets": 6,
+        "secure attachment": 7
+      },
+      "materials_quality": {
+        "high-quality nylon": 8,
+        "reliable": 7,
+        "metal eyelets": 6
+      },
+      "weather_protection": {
+        "rain protection": 9,
+        "dirt protection": 8,
+        "environmental protection": 9,
+        "waterproof": 10,
+        "weather protection": 10
+      },
+      "bike_compatibility": {
+        "R 1300 GS": 10,
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "number plate window": 4
+      },
+      "style_appearance": {
+        "outdoor design": 3
+      }
+    },
+    "description": "The Outdoor vehicle cover reliably protects your bike from rain, dirt and other environmental influences. The high-quality nylon cover is waterproof; it features ventilation openings and a viewing window for the number plate. Drawstrings and two metal eyelets guarantee secure attachment to the motorcycle.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQj2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8YJ9w1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Maintenance & Technology",
+    "compatible_bikes": [
+      "R 1300 GS",
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0026RE",
+    "name": "12 l tank bag, black",
+    "price": "£ 306.00",
+    "keywords": {
+      "product_type": {
+        "tank bag": 10,
+        "rucksack": 6,
+        "storage": 8
+      },
+      "primary_use_cases": {
+        "long tours": 8,
+        "short tours": 7,
+        "touring": 8
+      },
+      "key_features": {
+        "snap-on attachment": 9,
+        "waterproof inner bag": 8,
+        "retains shape": 6,
+        "no strap": 7,
+        "outer bags": 5
+      },
+      "materials_quality": {
+        "1680 ballistic nylon": 8,
+        "sturdy": 7,
+        "tear-proof": 7,
+        "tough": 6
+      },
+      "weather_protection": {
+        "waterproof": 8,
+        "weather-resistant": 8,
+        "UV-resistant": 7
+      },
+      "bike_compatibility": {
+        "R 1300 GS Adventure": 10,
+        "fuel tank": 10
+      },
+      "capacity_size": {
+        "12 l": 9,
+        "5 kg maximum load": 8
+      },
+      "style_appearance": {
+        "black": 4,
+        "bright overprint": 3
+      }
+    },
+    "description": "The 12 l black tank bag is an ideal companion on long and short tours with its loading capacity of up to 5 kg. The rucksack with its waterproof inner bag retains its shape, can be securely snapped onto the fuel tank without a strap and is both weather- and UV-resistant.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XkWw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI002729",
+    "name": "Backrest pad for aluminium topcase, black",
+    "price": "£ 85.00",
+    "keywords": {
+      "product_type": {
+        "backrest pad": 9,
+        "topcase accessory": 8,
+        "passenger comfort pad": 7
+      },
+      "primary_use_cases": {
+        "long tours": 8,
+        "passenger comfort": 9,
+        "short trips": 6
+      },
+      "key_features": {
+        "increased passenger comfort": 9,
+        "counteracts fatigue": 8,
+        "easy installation": 7,
+        "adhesive bonding": 6
+      },
+      "materials_quality": {
+        "aluminium topcase": 6
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {},
+      "style_appearance": {
+        "black": 4,
+        "black grained": 5
+      }
+    },
+    "description": "Thanks to the backrest pad for the aluminium topcase, the passenger enjoys more comfort both on short trips and on long tours.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8RWVw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI00272J",
+    "name": "Luggage plate",
+    "price": "£ 152.00",
+    "keywords": {
+      "product_type": {
+        "luggage plate": 10,
+        "storage": 9,
+        "passenger seat replacement": 8
+      },
+      "primary_use_cases": {
+        "transporting larger luggage": 9,
+        "cargo transport": 8,
+        "load securing": 7
+      },
+      "key_features": {
+        "integrated lashing eyes": 8,
+        "centre of gravity positioning": 8,
+        "abrasion protection": 7,
+        "secure attachment": 7
+      },
+      "materials_quality": {
+        "sturdy plastic": 7,
+        "soft elastomer inlay": 6,
+        "durable construction": 6
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "5 kg load capacity": 9,
+        "greater transport capacity": 8,
+        "four lashing points": 6
+      },
+      "style_appearance": {
+        "black": 3,
+        "grained finish": 3,
+        "granite grey trim": 3
+      }
+    },
+    "description": "The luggage plate made of sturdy plastic replaces the passenger seat and is the ideal basis for safely transporting larger items of luggage. With the integrated lashing eyes, the luggage can also be attached close to the vehicle’s centre of gravity.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8RWnw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0026ZJ",
+    "name": "Radiator cowl bag set, black, 4 l",
+    "price": "£ 259.00",
+    "keywords": {
+      "product_type": {
+        "radiator cowl bag": 10,
+        "storage bag": 8,
+        "motorcycle bag": 7
+      },
+      "primary_use_cases": {
+        "on the go storage": 8,
+        "accessible storage": 7,
+        "small objects storage": 6
+      },
+      "key_features": {
+        "no strap attachment": 9,
+        "three hook engagement": 8,
+        "shape retention": 7,
+        "tear resistant": 7,
+        "secure attachment": 6
+      },
+      "materials_quality": {
+        "EVA plastic lid": 6,
+        "tear resistant": 7,
+        "durable": 6,
+        "tough": 6
+      },
+      "weather_protection": {
+        "waterproof inner bag": 9,
+        "water resistant": 8,
+        "weather resistant": 8,
+        "UV resistant": 7,
+        "dirt repellent": 6
+      },
+      "bike_compatibility": {
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "4 liter": 8,
+        "two bags": 6
+      },
+      "style_appearance": {
+        "black": 4,
+        "bright overprint": 3
+      }
+    },
+    "description": "The black radiator cowl bag provides practical stowage space for smaller objects that you need to have readily accessible on the go. The bag retains its shape, can be securely attached to the radiator cowl without a strap and is extra tear-resistant and durable, as well as being water-resistant, weather-resistant and dirt-repellent.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Xznw1p%25dz3GtUDvJdozc%25Wjl8snek10trW3%255W94GZIHuLWWYtZ",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0027JF",
+    "name": "Radiator cowl bag, black, 4 l",
+    "price": "£ 598.00",
+    "keywords": {
+      "product_type": {
+        "radiator_cowl_bag": 10,
+        "storage_bag": 9,
+        "motorcycle_bag": 8
+      },
+      "primary_use_cases": {
+        "practical_stowage": 8,
+        "readily_accessible_storage": 7,
+        "on_the_go_storage": 6
+      },
+      "key_features": {
+        "shape_retaining": 9,
+        "securely_latched": 8,
+        "no_strap_attachment": 8,
+        "EVA_plastic_lid": 7,
+        "waterproof_inner_bag": 7,
+        "retrofit_kit": 6
+      },
+      "materials_quality": {
+        "tear_resistant": 8,
+        "durable": 8,
+        "tough": 7,
+        "EVA_plastic": 6
+      },
+      "weather_protection": {
+        "water_resistant": 8,
+        "weather_resistant": 8,
+        "UV_resistant": 7,
+        "dirt_repellent": 6,
+        "waterproof_inner_bag": 8
+      },
+      "bike_compatibility": {
+        "R_1300_GS_Adventure": 10
+      },
+      "capacity_size": {
+        "4_liter": 8,
+        "smaller_objects": 6
+      },
+      "style_appearance": {
+        "black": 4,
+        "bright_overprint": 3
+      }
+    },
+    "description": "The black radiator cowl bag provides practical stowage space for smaller objects that you need to have readily accessible on the go. The bag retains its shape, can be securely latched on to the radiator cowl and is extra tear-resistant and durable, as well as being water-resistant, weather-resistant and dirt-repellent.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Rwqw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0026ZI",
+    "name": "Storage net for aluminium case",
+    "price": "£ 39.00",
+    "keywords": {
+      "product_type": {
+        "storage net": 10,
+        "luggage net": 8,
+        "accessory": 5
+      },
+      "primary_use_cases": {
+        "storage": 9,
+        "organization": 7,
+        "quick access": 6,
+        "tool storage": 5
+      },
+      "key_features": {
+        "elastic": 8,
+        "custom-fit": 8,
+        "hook attachment": 7,
+        "perfect fit": 7,
+        "quick installation": 6,
+        "no installation material": 5
+      },
+      "materials_quality": {
+        "elastic": 6
+      },
+      "weather_protection": {
+        "rain jacket storage": 4
+      },
+      "bike_compatibility": {
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "smaller items": 7,
+        "lid storage": 6
+      },
+      "style_appearance": {
+        "black": 3
+      }
+    },
+    "description": "The custom-fit storage net allows you to store anything you need to have readily accessible in the aluminium case’s lid – from a rain jacket to tools. The elastic luggage net for smaller objects is simply attached to the provided hooks on the inside of the lid.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Xzmw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Storage",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI00270Q",
+    "name": "High, tinted windscreen",
+    "price": "£ 322.00",
+    "keywords": {
+      "product_type": {
+        "windscreen": 10,
+        "high_windscreen": 9
+      },
+      "primary_use_cases": {
+        "higher_speeds": 8,
+        "comfort": 7,
+        "safety": 7,
+        "aerodynamics": 6
+      },
+      "key_features": {
+        "wind_pressure_reduction": 9,
+        "scratch_resistant_coating": 7,
+        "wind_tunnel_developed": 7,
+        "easy_installation": 6,
+        "upper_body_protection": 8
+      },
+      "materials_quality": {
+        "polycarbonate": 6,
+        "scratch_resistant": 7,
+        "wind_tunnel_tested": 8
+      },
+      "weather_protection": {
+        "wind_pressure_relief": 9,
+        "wind_protection": 8
+      },
+      "bike_compatibility": {
+        "R_1300_GS_Adventure": 10
+      },
+      "capacity_size": {
+        "high": 5
+      },
+      "style_appearance": {
+        "tinted": 6,
+        "dark_tinting": 5
+      }
+    },
+    "description": "At higher speeds, the high windscreen with dark tinting noticeably relieves wind pressure from the upper body. This increases comfort and safety because the rider does not get tired so quickly. Another benefit of the windscreen is its excellent aerodynamics.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8RXGw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Ergonomics & Comfort",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0026XU",
+    "name": "Wind deflectors, tinted",
+    "price": "£ 61.00",
+    "keywords": {
+      "product_type": {
+        "wind deflectors": 10,
+        "ergonomics": 7,
+        "comfort": 7
+      },
+      "primary_use_cases": {
+        "wind protection": 9,
+        "hand protection": 8,
+        "riding comfort": 6
+      },
+      "key_features": {
+        "easy installation": 8,
+        "effective protection": 8,
+        "tinted": 7
+      },
+      "materials_quality": {
+        "polycarbonate": 6
+      },
+      "weather_protection": {
+        "wind protection": 9,
+        "weather protection": 8
+      },
+      "bike_compatibility": {
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {},
+      "style_appearance": {
+        "tinted": 6,
+        "sporty impression": 5
+      }
+    },
+    "description": "The tinted wind deflectors can be easily installed and effectively protect the hands from wind and weather. Their look accentuates the bike’s sporty impression.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XSfw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Ergonomics & Comfort",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0027OD",
+    "name": "Windscreen high",
+    "price": "£ 302.00",
+    "keywords": {
+      "product_type": {
+        "windscreen": 10,
+        "high windscreen": 9
+      },
+      "primary_use_cases": {
+        "aerodynamics": 8,
+        "wind protection": 8,
+        "weather protection": 7
+      },
+      "key_features": {
+        "scratch-resistant coating": 8,
+        "excellent aerodynamics": 8,
+        "outstanding aerodynamics": 8,
+        "dual-side coating": 7
+      },
+      "materials_quality": {
+        "scratch-proof coating": 8,
+        "durability": 7,
+        "scratch-resistant": 7
+      },
+      "weather_protection": {
+        "wind protection": 9,
+        "weather protection": 9,
+        "excellent protection": 8
+      },
+      "bike_compatibility": {
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {
+        "330mm x 320mm": 6,
+        "dimensions": 5
+      },
+      "style_appearance": {
+        "sporty look": 9,
+        "individual appearance": 8,
+        "ACC lettering": 7,
+        "individual and sporty look": 8
+      }
+    },
+    "description": "The high windscreen emphasises the bike’s sporty look. It combines excellent aerodynamics with excellent protection from wind and weather. The scratch-resistant coating on both sides increases durability. The \"ACC\" lettering rounds off the individual appearance.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8R4Xw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Ergonomics & Comfort",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0026XV",
+    "name": "Windscreen spoiler",
+    "price": "£ 146.00",
+    "keywords": {
+      "product_type": {
+        "windscreen spoiler": 10,
+        "spoiler": 8,
+        "wind deflector": 7
+      },
+      "primary_use_cases": {
+        "long trips": 8,
+        "touring": 7,
+        "comfort enhancement": 6
+      },
+      "key_features": {
+        "improved wind protection": 9,
+        "reduced wind buffeting": 8,
+        "easy installation": 6,
+        "clamp mounting": 5
+      },
+      "materials_quality": {
+        "scratch-resistant coating": 7
+      },
+      "weather_protection": {
+        "wind protection": 10,
+        "wind buffeting reduction": 9,
+        "helmet protection": 8,
+        "neck area protection": 7
+      },
+      "bike_compatibility": {
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {},
+      "style_appearance": {}
+    },
+    "description": "The spoiler for the windscreen significantly boosts comfort on long trips. The improved wind protection reliably reduces wind buffeting on the helmet and in the neck area.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8XSBw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Ergonomics & Comfort",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0025LM",
+    "name": "Extra socket",
+    "price": "£ 36.00",
+    "keywords": {
+      "product_type": {
+        "extra socket": 10,
+        "12V power socket": 9,
+        "electrical accessory": 7
+      },
+      "primary_use_cases": {
+        "charging mobile phones": 8,
+        "powering navigation devices": 8,
+        "powering music players": 7,
+        "external power consumers": 6
+      },
+      "key_features": {
+        "retrofit solution": 9,
+        "adapter compatibility": 7,
+        "external device power supply": 8
+      },
+      "materials_quality": {},
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {},
+      "style_appearance": {}
+    },
+    "description": "The extra socket enables the retrofitting of a 12V power socket for the supply of external power consumers. With the appropriate adapters, external navigation devices, music players or mobile phones, for example, can be supplied with power or charged.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8Yi3w1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Navigation & Communication",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI002723",
+    "name": "Headlight guard",
+    "price": "£ 128.00",
+    "keywords": {
+      "product_type": {
+        "headlight guard": 10,
+        "safety": 8,
+        "protection accessory": 7
+      },
+      "primary_use_cases": {
+        "off-road riding": 9,
+        "adventure riding": 7,
+        "trail protection": 6
+      },
+      "key_features": {
+        "damage protection": 9,
+        "quick-release coupling": 8,
+        "easy installation": 7,
+        "stone chip protection": 8
+      },
+      "materials_quality": {
+        "sturdy plastic": 6,
+        "durable construction": 5
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {},
+      "style_appearance": {
+        "guard design": 3
+      }
+    },
+    "description": "The headlight guard made of sturdy plastic effectively protects the headlight from damage when riding off-road, for instance from stone chips. The quick-release coupling makes installation simple.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8RWgw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Safety",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0027KN",
+    "name": "Protective grille for LED additional headlight",
+    "price": "£ 164.00",
+    "keywords": {
+      "product_type": {
+        "protective_grille": 10,
+        "headlight_protection": 9,
+        "safety_accessory": 8
+      },
+      "primary_use_cases": {
+        "off_road_riding": 9,
+        "enduro": 8,
+        "stone_chip_protection": 8
+      },
+      "key_features": {
+        "robust_protection": 8,
+        "damage_protection": 8,
+        "LED_headlight_compatible": 7
+      },
+      "materials_quality": {
+        "steel": 8,
+        "stainless_steel": 7,
+        "robust": 7
+      },
+      "weather_protection": {},
+      "bike_compatibility": {
+        "R_1300_GS_Adventure": 10
+      },
+      "capacity_size": {
+        "65_grams": 4
+      },
+      "style_appearance": {
+        "black_painted": 5,
+        "black": 4
+      }
+    },
+    "description": "The protective grille for the LED additional headlight protects the Enduro against damage, e.g. from stone chips. The protective grille made from black-painted steel is the perfect companion for off-road riding.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8RRew1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Safety",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  },
+  {
+    "id": "EI0027X1",
+    "name": "Trophy aluminium engine guard",
+    "price": "£ 305.00",
+    "keywords": {
+      "product_type": {
+        "engine guard": 10,
+        "protection": 9,
+        "safety": 8
+      },
+      "primary_use_cases": {
+        "off-road adventures": 9,
+        "ambitious off-road use": 9,
+        "enduro": 8
+      },
+      "key_features": {
+        "extreme protection": 10,
+        "significantly increased safety": 9,
+        "reinforced side sections": 8,
+        "maximum resilience": 7,
+        "additional protection against stone chips": 7
+      },
+      "materials_quality": {
+        "aluminium": 9,
+        "sturdy aluminium structure": 8,
+        "blasted and colourless anodised": 7,
+        "withstands harshest conditions": 8
+      },
+      "weather_protection": {
+        "harshest conditions": 6
+      },
+      "bike_compatibility": {
+        "R 1300 GS Adventure": 10
+      },
+      "capacity_size": {},
+      "style_appearance": {
+        "distinctive off-road look": 7,
+        "adventurous spirit": 5
+      }
+    },
+    "description": "Extreme protection for ambitious off-road adventures. The Trophy aluminium enduro engine guard with reinforced side sections offers significantly increased safety for the engine, exhaust manifold and foot lever. The blasted and colourless anodised material withstands the harshest conditions and gives the bike a distinctive off-road look.",
+    "image": "https://prod.cosy.bmw.cloud/h5nbc/cosySec?COSY-EU-100-7331c9Nv2Z7d5y07eRUQlPw7CcVxEaZQd2uzHVPRdgSht5gJE470jR5gswTZdk4%25rxlzK%25yoKG3eTOnvzfAxPs8%25P6P1LSClgpnQ3Qd19mfNpaD0EUNAoXsbaDWF9%25UcX0%25l7wVG8RSKw1pEaY5PuO308syXqd5fYA52QBzc6ti55hqz",
+    "category": "Safety",
+    "compatible_bikes": [
+      "R 1300 GS Adventure"
+    ]
+  }
+]

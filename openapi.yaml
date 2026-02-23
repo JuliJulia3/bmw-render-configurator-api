@@ -1,0 +1,164 @@
+openapi: 3.1.0
+info:
+  title: BMW R1300GS Render Configurator API
+  version: 1.0.0
+  description: >
+    Bike-only API that generates a studio 3D product-render image of a BMW R1300GS or R1300GS Adventure
+    with selected accessories derived from accessories_merged.json. No transparent PNG assets required.
+
+servers:
+  - url: https://YOUR-RENDER-URL
+
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                    example: true
+
+  /v1/accessories:
+    get:
+      summary: List accessories (discover valid IDs)
+      description: >
+        Returns accessory IDs + details from accessories_merged.json.
+        Useful for Claude/UI to pick valid accessory_ids.
+      parameters:
+        - name: q
+          in: query
+          required: false
+          description: Free-text search across name/description/category
+          schema:
+            type: string
+        - name: mountable_only
+          in: query
+          required: false
+          description: If true, filters out non-bike-mounted items (e.g., backpacks/apparel).
+          schema:
+            type: boolean
+            default: false
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 100
+            minimum: 1
+            maximum: 1000
+      responses:
+        "200":
+          description: Accessories list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  total:
+                    type: integer
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id: { type: string }
+                        name: { type: string }
+                        category: { type: string }
+                        description: { type: string }
+
+  /v1/bike/render:
+    post:
+      summary: Generate studio 3D product render of BMW bike with accessories
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [variant, view, accessory_ids]
+              properties:
+                variant:
+                  type: string
+                  enum: [r1300gs, r1300gs_adventure]
+                view:
+                  type: string
+                  enum: [left, right, front_3q, rear_3q]
+                  default: left
+                accessory_ids:
+                  type: array
+                  items: { type: string }
+                  description: Array of accessory IDs from /v1/accessories
+                background:
+                  type: string
+                  enum: [white, studio_gray]
+                  default: studio_gray
+                realism:
+                  type: string
+                  enum: [studio_3d, more_real, slightly_stylized]
+                  default: studio_3d
+                size:
+                  type: string
+                  enum: ["1024x1024", "1536x1024", "1024x1536"]
+                  default: "1536x1024"
+                debug:
+                  type: boolean
+                  default: false
+                  description: If true, returns the final prompt + resolved/filtered items instead of an image.
+      responses:
+        "200":
+          description: PNG image or debug JSON
+          content:
+            image/png:
+              schema:
+                type: string
+                format: binary
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok: { type: boolean }
+                  prompt: { type: string }
+                  missing_accessory_ids:
+                    type: array
+                    items: { type: string }
+                  filtered_out:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id: { type: string }
+                        reason: { type: string }
+                  resolved_accessories:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id: { type: string }
+                        name: { type: string }
+                        category: { type: string }
+
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error: { type: string }
+
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error: { type: string }
+                  details: { type: string }
