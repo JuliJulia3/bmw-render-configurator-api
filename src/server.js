@@ -174,7 +174,7 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) return res.status(500).json({ error: "Missing OPENAI_API_KEY" });
 
-    const model = String(process.env.OPENAI_IMAGE_MODEL || "gpt-image-1").trim();
+    const model = String(process.env.OPENAI_IMAGE_MODEL || "gpt-image-1.5").trim();
 
     if (!req.file) return res.status(400).json({ error: "bike_image (file) is required" });
 
