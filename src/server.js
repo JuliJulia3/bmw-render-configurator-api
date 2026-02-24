@@ -133,10 +133,9 @@ async function toRgbaPngBuffer(file) {
 async function callOpenAIImageEdit({ apiKey, model, pngBuffer, prompt, size }) {
   const form = new FormData();
 
-  // Accept both conventions; OpenAI supports image, and some setups used image[]
-  // Keeping BOTH maximizes compatibility across model/project quirks.
+  // OpenAI /v1/images/edits only accepts the field named "image" (not "image[]").
+  // Sending both breaks multipart parsing (invalid_multipart_form_data).
   form.append("image", pngBuffer, { filename: "bike.png", contentType: "image/png" });
-  form.append("image[]", pngBuffer, { filename: "bike.png", contentType: "image/png" });
 
   form.append("model", model);
   form.append("prompt", prompt);
@@ -145,13 +144,18 @@ async function callOpenAIImageEdit({ apiKey, model, pngBuffer, prompt, size }) {
   // ask for base64 output explicitly
   form.append("response_format", "b64_json");
 
+  // Node 18 native fetch does not reliably stream the form-data npm package as a body.
+  // Serialize to a Buffer first so fetch sends it as a complete, correctly-framed payload.
+  const formBuffer = form.getBuffer();
+  const formHeaders = form.getHeaders();
+
   const r = await fetch("https://api.openai.com/v1/images/edits", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
-      ...form.getHeaders()
+      ...formHeaders
     },
-    body: form
+    body: formBuffer
   });
 
   const text = await r.text();
