@@ -3,7 +3,6 @@ import cors from "cors";
 import multer from "multer";
 import sharp from "sharp";
 import heicConvert from "heic-convert";
-import FormData from "form-data";
 import swaggerUi from "swagger-ui-express";
 
 import { AccessoriesStore } from "./accessoriesStore.js";
@@ -30,7 +29,7 @@ app.use(
       return callback(null, false);
     },
     methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"]
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
@@ -46,7 +45,7 @@ app.use(
   swaggerUi.serve,
   swaggerUi.setup(openapiSpec, {
     explorer: true,
-    customSiteTitle: "BMW Render Configurator API Docs"
+    customSiteTitle: "BMW Render Configurator API Docs",
   })
 );
 
@@ -122,26 +121,37 @@ async function toPngBuffer(file) {
   }
 }
 
+/**
+ * OpenAI Image Edit call (native FormData + Blob)
+ * Fixes invalid_multipart_form_data by:
+ * - using the correct field name: "image"
+ * - letting fetch set multipart boundaries (no manual Content-Type)
+ * - avoiding the legacy `form-data` library
+ */
 async function callOpenAIImageEdit({ apiKey, pngBuffer, prompt, size }) {
+  // Node 18+ has global FormData/Blob. Render typically runs Node 18+.
   const form = new FormData();
 
-  form.append("image[]", pngBuffer, {
-    filename: "bike.png",
-    contentType: "image/png"
-  });
+  const blob = new Blob([pngBuffer], { type: "image/png" });
 
-  form.append("model", "gpt-image-1.5");
-  form.append("prompt", prompt);
-  form.append("size", size);
+  // IMPORTANT: field name must be "image" for edits
+  form.append("image", blob, "bike.png");
+
+  // Use a valid image model name
+  // If your account only supports gpt-image-1, keep "gpt-image-1"
+  form.append("model", "gpt-image-1");
+
+  form.append("prompt", String(prompt || ""));
+  form.append("size", String(size || "1536x1024"));
   form.append("response_format", "b64_json");
 
   const r = await fetch("https://api.openai.com/v1/images/edits", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
-      ...form.getHeaders()
+      // DO NOT set Content-Type manually
     },
-    body: form
+    body: form,
   });
 
   const text = await r.text();
@@ -189,7 +199,7 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
         missing_accessory_ids: missing,
         filtered_out,
         resolved_accessories: selected,
-        prompt
+        prompt,
       });
     }
 
@@ -199,7 +209,7 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
     if (!result.ok) {
       return res.status(result.status).json({
         error: "OpenAI request failed",
-        details: result.json ?? result.rawText
+        details: result.json ?? result.rawText,
       });
     }
 
@@ -207,7 +217,7 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
     if (!b64) {
       return res.status(500).json({
         error: "No b64_json returned",
-        details: result.json ?? result.rawText
+        details: result.json ?? result.rawText,
       });
     }
 
@@ -240,7 +250,7 @@ app.post("/v1/bike/render/json", upload.single("bike_image"), async (req, res) =
       return res.status(400).json({ error: "accessory_ids is required (comma-separated IDs)" });
     }
 
-    const { selected } = store.resolveFromCsv(accessoryCsv, { mountableOnly: true });
+    const { selected, missing, filtered_out } = store.resolveFromCsv(accessoryCsv, { mountableOnly: true });
 
     const prompt = buildEditPrompt({ variant, view, background, realism, accessories: selected });
     const bikePng = await toPngBuffer(req.file);
@@ -250,7 +260,9 @@ app.post("/v1/bike/render/json", upload.single("bike_image"), async (req, res) =
     return res.status(result.status).json({
       ok: result.ok,
       status: result.status,
-      openai: result.json ?? result.rawText
+      missing_accessory_ids: missing,
+      filtered_out,
+      openai: result.json ?? result.rawText,
     });
   } catch (e) {
     return res.status(500).json({ error: "Server error", details: String(e) });
