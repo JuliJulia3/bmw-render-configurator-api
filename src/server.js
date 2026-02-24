@@ -4,7 +4,6 @@ import cors from "cors";
 import multer from "multer";
 import sharp from "sharp";
 import heicConvert from "heic-convert";
-import FormData from "form-data";
 import { AccessoriesStore } from "./accessoriesStore.js";
 import { buildEditPrompt } from "./prompt.js";
 
@@ -125,37 +124,45 @@ async function toRgbaPngBuffer(file) {
 }
 
 /**
- * Calls OpenAI Images Edits endpoint using proper Node multipart form-data.
- * IMPORTANT:
- * - Use `form-data` package (NOT browser FormData/Blob) to avoid invalid_multipart_form_data.
- * - Do NOT send "quality" (your endpoint currently rejects it).
+ * Calls the OpenAI Responses API (/v1/responses) with gpt-image-1.
+ * /v1/images/edits only accepts dall-e-2; gpt-image-1 requires the Responses API.
+ * The image is sent as a base64 data-URL inside the JSON body — no multipart needed.
  */
 async function callOpenAIImageEdit({ apiKey, model, pngBuffer, prompt, size }) {
-  const form = new FormData();
+  const b64Image = pngBuffer.toString("base64");
 
-  // OpenAI /v1/images/edits only accepts the field named "image" (not "image[]").
-  // Sending both breaks multipart parsing (invalid_multipart_form_data).
-  form.append("image", pngBuffer, { filename: "bike.png", contentType: "image/png" });
+  const body = {
+    model,
+    input: [
+      {
+        role: "user",
+        content: [
+          {
+            type: "input_image",
+            image_url: `data:image/png;base64,${b64Image}`
+          },
+          {
+            type: "input_text",
+            text: prompt
+          }
+        ]
+      }
+    ],
+    tools: [
+      {
+        type: "image_generation",
+        size
+      }
+    ]
+  };
 
-  form.append("model", model);
-  form.append("prompt", prompt);
-  form.append("size", size);
-
-  // ask for base64 output explicitly
-  form.append("response_format", "b64_json");
-
-  // Node 18 native fetch does not reliably stream the form-data npm package as a body.
-  // Serialize to a Buffer first so fetch sends it as a complete, correctly-framed payload.
-  const formBuffer = form.getBuffer();
-  const formHeaders = form.getHeaders();
-
-  const r = await fetch("https://api.openai.com/v1/images/edits", {
+  const r = await fetch("https://api.openai.com/v1/responses", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
-      ...formHeaders
+      "Content-Type": "application/json"
     },
-    body: formBuffer
+    body: JSON.stringify(body)
   });
 
   const text = await r.text();
@@ -253,7 +260,8 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
       });
     }
 
-    const b64 = result.json?.data?.[0]?.b64_json;
+    // Responses API: output is an array; find the image_generation_call item.
+    const b64 = result.json?.output?.find(o => o.type === "image_generation_call")?.result;
     if (!b64) {
       return res.status(500).json({
         error: "No b64_json returned",
