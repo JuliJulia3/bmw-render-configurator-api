@@ -167,7 +167,8 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
     const bikePng = await bikeToPngBuffer(req.file);
 
     // This is the key line that gives you the old behaviour:
-    const model = String(process.env.OPENAI_IMAGE_MODEL || "gpt-image-1.5").trim();
+    const model = process.env.OPENAI_IMAGE_MODEL || "gpt-image-1.5";
+    form.append("model", model)
 
     const result = await callOpenAIImageEdit({
       apiKey,
