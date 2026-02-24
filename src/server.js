@@ -8,8 +8,6 @@ import { buildEditPrompt } from "./prompt.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-// multipart upload
 const upload = multer({ limits: { fileSize: 15 * 1024 * 1024 } });
 
 const store = new AccessoriesStore();
@@ -65,7 +63,6 @@ async function bikeToPngBuffer(file) {
       .toBuffer();
   } catch (err) {
     if (!isHeic) throw err;
-
     const converted = await heicConvert({ buffer: file.buffer, format: "PNG" });
     return await sharp(Buffer.from(converted))
       .rotate()
@@ -75,28 +72,25 @@ async function bikeToPngBuffer(file) {
   }
 }
 
-/**
- * Call OpenAI /v1/images/edits using GPT Image model (the "good" behaviour).
- * - Uses native FormData + Blob (no manual multipart headers).
- * - Uses field name "image" (repeat for multiple images if needed).
- * Docs: edits endpoint supports gpt-image-1.5 and others. :contentReference[oaicite:4]{index=4}
- */
-async function callOpenAIImageEdit({ apiKey, model, pngBuffer, prompt, size }) {
+function buildForm({ pngBuffer, prompt, size, model, includeQualityParams }) {
   const form = new FormData();
-
-  // Field name per docs: "image"
-  const blob = new Blob([pngBuffer], { type: "image/png" });
-  form.append("image", blob, "bike.png");
-
+  form.append("image", new Blob([pngBuffer], { type: "image/png" }), "bike.png");
   form.append("model", model);
   form.append("prompt", prompt);
   form.append("size", size);
-
-  // These are supported parameters in the Images API for GPT image models. :contentReference[oaicite:5]{index=5}
-  form.append("quality", "high");
-  form.append("output_format", "png");
   form.append("response_format", "b64_json");
 
+  // These are what you WANT for the “good” output.
+  // But some servers/models reject them; we’ll retry without if needed.
+  if (includeQualityParams) {
+    form.append("quality", "high");
+    form.append("output_format", "png");
+  }
+
+  return form;
+}
+
+async function postEdits({ apiKey, form }) {
   const r = await fetch("https://api.openai.com/v1/images/edits", {
     method: "POST",
     headers: { Authorization: `Bearer ${apiKey}` },
@@ -118,15 +112,10 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
   try {
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) return res.status(500).json({ error: "Missing OPENAI_API_KEY" });
-
-    if (!req.file) {
-      return res.status(400).json({ error: "bike_image (file) is required" });
-    }
+    if (!req.file) return res.status(400).json({ error: "bike_image (file) is required" });
 
     const variant = normalizeVariant(req.body?.variant);
-    if (!variant) {
-      return res.status(400).json({ error: "variant must be r1300gs or r1300gs_adventure" });
-    }
+    if (!variant) return res.status(400).json({ error: "variant must be r1300gs or r1300gs_adventure" });
 
     const view = normalizeView(req.body?.view);
     const background = String(req.body?.background || "studio_gray").toLowerCase().trim();
@@ -139,7 +128,6 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
       return res.status(400).json({ error: "accessory_ids is required (comma-separated IDs)" });
     }
 
-    // Filter out non-mountable items by default
     const { selected, missing, filtered_out } = store.resolveFromCsv(accessoryCsv, { mountableOnly: true });
 
     const prompt = buildEditPrompt({
@@ -150,41 +138,50 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
       accessories: selected,
     });
 
+    // FORCE what you want
+    const model = String(process.env.OPENAI_IMAGE_MODEL || "gpt-image-1.5").trim();
+    console.log("Using OPENAI_IMAGE_MODEL =", model);
+
     if (debug) {
       return res.json({
         ok: true,
+        model,
         variant,
         view,
         size,
         missing_accessory_ids: missing,
         filtered_out,
         resolved_accessories: selected,
+        prompt_length: prompt.length,
         prompt,
       });
     }
 
-    // Normalize bike image to PNG for stability
     const bikePng = await bikeToPngBuffer(req.file);
 
-    // This is the key line that gives you the old behaviour:
-    const model = process.env.OPENAI_IMAGE_MODEL || "gpt-image-1.5";
-    form.append("model", model)
-
-    const result = await callOpenAIImageEdit({
+    // 1st try: include quality/output_format
+    let result = await postEdits({
       apiKey,
-      model,
-      pngBuffer: bikePng,
-      prompt,
-      size,
+      form: buildForm({ pngBuffer: bikePng, prompt, size, model, includeQualityParams: true }),
     });
 
+    // If OpenAI complains about quality/output_format, retry without them
+    const errMsg =
+      result.json?.error?.message ||
+      (typeof result.rawText === "string" ? result.rawText : "");
+
+    if (!result.ok && /Unknown parameter: 'quality'|Unknown parameter: 'output_format'/i.test(errMsg)) {
+      console.warn("Retrying without quality/output_format due to OpenAI rejection...");
+      result = await postEdits({
+        apiKey,
+        form: buildForm({ pngBuffer: bikePng, prompt, size, model, includeQualityParams: false }),
+      });
+    }
+
     if (!result.ok) {
-      // If your project forces dall-e-2, OpenAI will error here.
       return res.status(result.status).json({
         error: "OpenAI request failed",
         details: result.json ?? result.rawText,
-        hint:
-          "If you see 'Value must be dall-e-2', your current OpenAI key/project does not have access to gpt-image-1.5. Use a key/project with GPT Image enabled and set OPENAI_IMAGE_MODEL=gpt-image-1.5.",
       });
     }
 
