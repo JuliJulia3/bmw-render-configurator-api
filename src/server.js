@@ -1,3 +1,4 @@
+// src/server.js
 import express from "express";
 import cors from "cors";
 import multer from "multer";
@@ -10,41 +11,45 @@ import { buildEditPrompt } from "./prompt.js";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// --- CORS (env-driven allowlist) ---
+// --------------------
+// CORS (safe: never throws 500)
+// --------------------
 const allowedOrigins = (process.env.ALLOWED_ORIGINS || "")
   .split(",")
   .map((s) => s.trim())
   .filter(Boolean);
 
-// If ALLOWED_ORIGINS is empty, we still allow non-browser calls (no Origin header)
-// but we block unknown browser origins by default.
 app.use(
   cors({
     origin: (origin, callback) => {
-      // No Origin header = curl / server-to-server / Postman
+      // No Origin header = curl / Postman / server-to-server
       if (!origin) return callback(null, true);
 
-      // If no allowlist is set, block browser origins by default
-      if (allowedOrigins.length === 0) {
-        return callback(new Error("CORS blocked: ALLOWED_ORIGINS not set"), false);
-      }
+      // If you haven't set an allowlist yet, allow all (dev-friendly)
+      if (allowedOrigins.length === 0) return callback(null, true);
 
+      // Allow only listed origins
       if (allowedOrigins.includes(origin)) return callback(null, true);
-      return callback(new Error(`CORS blocked for origin: ${origin}`), false);
+
+      // Block silently (DO NOT throw / do not cause 500)
+      return callback(null, false);
     },
     methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: false
+    allowedHeaders: ["Content-Type", "Authorization"]
   })
 );
 
 // Preflight for all routes (important for multipart/form-data)
 app.options("*", cors());
 
-// --- Upload ---
+// --------------------
+// Upload
+// --------------------
 const upload = multer({ limits: { fileSize: 15 * 1024 * 1024 } });
 
-// --- Data store ---
+// --------------------
+// Data store
+// --------------------
 const store = new AccessoriesStore();
 try {
   const count = store.load();
@@ -53,6 +58,9 @@ try {
   console.error("Failed to load accessories_merged.json:", e);
 }
 
+// --------------------
+// Routes
+// --------------------
 app.get("/health", (req, res) => res.json({ ok: true }));
 
 app.get("/v1/accessories", (req, res) => {
@@ -109,7 +117,7 @@ async function toPngBuffer(file) {
 async function callOpenAIImageEdit({ apiKey, pngBuffer, prompt, size }) {
   const form = new FormData();
 
-  // IMPORTANT: use image[] (array syntax) so multiple images is allowed
+  // IMPORTANT: use image[] (array syntax)
   form.append("image[]", pngBuffer, {
     filename: "bike.png",
     contentType: "image/png"
@@ -155,7 +163,6 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
     const background = String(req.body?.background || "studio_gray").toLowerCase().trim();
     const realism = String(req.body?.realism || "studio_3d").toLowerCase().trim();
     const size = normalizeSize(req.body?.size);
-    const debug = String(req.body?.debug || "false") === "true";
 
     const accessoryCsv = String(req.body?.accessory_ids || "");
     if (!accessoryCsv.trim()) {
@@ -171,19 +178,6 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
       realism,
       accessories: selected
     });
-
-    if (debug) {
-      return res.json({
-        ok: true,
-        variant,
-        view,
-        size,
-        missing_accessory_ids: missing,
-        filtered_out,
-        resolved_accessories: selected,
-        prompt
-      });
-    }
 
     const bikePng = await toPngBuffer(req.file);
 
@@ -219,7 +213,7 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
   }
 });
 
-// Optional JSON helper to debug OpenAI response
+// Optional helper: returns OpenAI JSON so you can debug without writing PNG
 app.post("/v1/bike/render/json", upload.single("bike_image"), async (req, res) => {
   try {
     const apiKey = process.env.OPENAI_API_KEY;
