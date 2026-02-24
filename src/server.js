@@ -89,13 +89,25 @@ function normalizeView(v) {
   return allowed.has(s) ? s : "left";
 }
 
+// API accepts these, but if we're using dall-e-2 we will override to 1024x1024 anyway
 function normalizeSize(s) {
   const v = String(s || "1536x1024").trim();
   const allowed = new Set(["1024x1024", "1536x1024", "1024x1536"]);
   return allowed.has(v) ? v : "1536x1024";
 }
 
-async function toPngBuffer(file) {
+// For dall-e-2 edits, valid sizes are 256/512/1024 square.
+// We'll choose 1024x1024 for best quality, and force the input image to match.
+function normalizeDalle2Size() {
+  return "1024x1024";
+}
+
+/**
+ * Convert input file -> PNG buffer.
+ * If square=true, we produce a square image of targetPx x targetPx (cover),
+ * which matches dall-e-2 "square png" expectations.
+ */
+async function toPngBuffer(file, { targetPx = 1600, square = false } = {}) {
   const mime = (file.mimetype || "").toLowerCase();
   const name = (file.originalname || "").toLowerCase();
   const isHeic =
@@ -104,45 +116,46 @@ async function toPngBuffer(file) {
     name.endsWith(".heic") ||
     name.endsWith(".heif");
 
+  const pipeline = (inputBuf) => {
+    let p = sharp(inputBuf, { animated: false }).rotate();
+
+    if (square) {
+      // Force square for dall-e-2 (cover crops as needed)
+      p = p.resize({ width: targetPx, height: targetPx, fit: "cover" });
+    } else {
+      // Keep aspect ratio
+      p = p.resize({ width: targetPx, height: targetPx, fit: "inside", withoutEnlargement: true });
+    }
+
+    return p.png().toBuffer();
+  };
+
   try {
-    return await sharp(file.buffer, { animated: false })
-      .rotate()
-      .resize({ width: 1600, height: 1600, fit: "inside", withoutEnlargement: true })
-      .png()
-      .toBuffer();
+    return await pipeline(file.buffer);
   } catch (err) {
     if (!isHeic) throw err;
     const converted = await heicConvert({ buffer: file.buffer, format: "PNG" });
-    return await sharp(Buffer.from(converted))
-      .rotate()
-      .resize({ width: 1600, height: 1600, fit: "inside", withoutEnlargement: true })
-      .png()
-      .toBuffer();
+    return await pipeline(Buffer.from(converted));
   }
 }
 
 /**
  * OpenAI Image Edit call (native FormData + Blob)
- * Fixes invalid_multipart_form_data by:
- * - using the correct field name: "image"
- * - letting fetch set multipart boundaries (no manual Content-Type)
- * - avoiding the legacy `form-data` library
+ * Uses OPENAI_IMAGE_MODEL if set, else defaults to dall-e-2.
  */
-async function callOpenAIImageEdit({ apiKey, pngBuffer, prompt, size }) {
-  // Node 18+ has global FormData/Blob. Render typically runs Node 18+.
+async function callOpenAIImageEdit({ apiKey, pngBuffer, prompt, size, model }) {
   const form = new FormData();
 
   const blob = new Blob([pngBuffer], { type: "image/png" });
 
-  // IMPORTANT: field name must be "image" for edits
+  // IMPORTANT: for edits, field name is "image"
   form.append("image", blob, "bike.png");
 
-  // Use a valid image model name
-  // If your account only supports gpt-image-1, keep "gpt-image-1"
-  form.append("model", "gpt-image-1");
-
+  form.append("model", model);
   form.append("prompt", String(prompt || ""));
-  form.append("size", String(size || "1536x1024"));
+
+  // For dall-e-2, size must be square 256/512/1024.
+  form.append("size", String(size));
   form.append("response_format", "b64_json");
 
   const r = await fetch("https://api.openai.com/v1/images/edits", {
@@ -178,7 +191,7 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
     const view = normalizeView(req.body?.view);
     const background = String(req.body?.background || "studio_gray").toLowerCase().trim();
     const realism = String(req.body?.realism || "studio_3d").toLowerCase().trim();
-    const size = normalizeSize(req.body?.size);
+    const requestedSize = normalizeSize(req.body?.size);
     const debug = String(req.body?.debug || "false") === "true";
 
     const accessoryCsv = String(req.body?.accessory_ids || "");
@@ -190,12 +203,21 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
 
     const prompt = buildEditPrompt({ variant, view, background, realism, accessories: selected });
 
+    // Choose image model (default dall-e-2 because your project is restricted)
+    const model = String(process.env.OPENAI_IMAGE_MODEL || "dall-e-2").trim();
+
+    // If using dall-e-2, force square size and square input
+    const isDalle2 = model === "dall-e-2";
+    const size = isDalle2 ? normalizeDalle2Size() : requestedSize;
+
     if (debug) {
       return res.json({
         ok: true,
         variant,
         view,
-        size,
+        requested_size: requestedSize,
+        effective_size: size,
+        model,
         missing_accessory_ids: missing,
         filtered_out,
         resolved_accessories: selected,
@@ -203,8 +225,12 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
       });
     }
 
-    const bikePng = await toPngBuffer(req.file);
-    const result = await callOpenAIImageEdit({ apiKey, pngBuffer: bikePng, prompt, size });
+    // Prepare image buffer according to model constraints
+    const bikePng = isDalle2
+      ? await toPngBuffer(req.file, { targetPx: 1024, square: true })
+      : await toPngBuffer(req.file, { targetPx: 1600, square: false });
+
+    const result = await callOpenAIImageEdit({ apiKey, pngBuffer: bikePng, prompt, size, model });
 
     if (!result.ok) {
       return res.status(result.status).json({
@@ -243,7 +269,7 @@ app.post("/v1/bike/render/json", upload.single("bike_image"), async (req, res) =
     const view = normalizeView(req.body?.view);
     const background = String(req.body?.background || "studio_gray").toLowerCase().trim();
     const realism = String(req.body?.realism || "studio_3d").toLowerCase().trim();
-    const size = normalizeSize(req.body?.size);
+    const requestedSize = normalizeSize(req.body?.size);
 
     const accessoryCsv = String(req.body?.accessory_ids || "");
     if (!accessoryCsv.trim()) {
@@ -253,13 +279,23 @@ app.post("/v1/bike/render/json", upload.single("bike_image"), async (req, res) =
     const { selected, missing, filtered_out } = store.resolveFromCsv(accessoryCsv, { mountableOnly: true });
 
     const prompt = buildEditPrompt({ variant, view, background, realism, accessories: selected });
-    const bikePng = await toPngBuffer(req.file);
 
-    const result = await callOpenAIImageEdit({ apiKey, pngBuffer: bikePng, prompt, size });
+    const model = String(process.env.OPENAI_IMAGE_MODEL || "dall-e-2").trim();
+    const isDalle2 = model === "dall-e-2";
+    const size = isDalle2 ? normalizeDalle2Size() : requestedSize;
+
+    const bikePng = isDalle2
+      ? await toPngBuffer(req.file, { targetPx: 1024, square: true })
+      : await toPngBuffer(req.file, { targetPx: 1600, square: false });
+
+    const result = await callOpenAIImageEdit({ apiKey, pngBuffer: bikePng, prompt, size, model });
 
     return res.status(result.status).json({
       ok: result.ok,
       status: result.status,
+      model,
+      requested_size: requestedSize,
+      effective_size: size,
       missing_accessory_ids: missing,
       filtered_out,
       openai: result.json ?? result.rawText,
