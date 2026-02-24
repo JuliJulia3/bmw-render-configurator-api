@@ -1,18 +1,20 @@
-// src/server.js
 import express from "express";
 import cors from "cors";
 import multer from "multer";
 import sharp from "sharp";
 import heicConvert from "heic-convert";
 import FormData from "form-data";
+import swaggerUi from "swagger-ui-express";
+
 import { AccessoriesStore } from "./accessoriesStore.js";
 import { buildEditPrompt } from "./prompt.js";
+import { openapiSpec } from "./openapi.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // --------------------
-// CORS (safe: never throws 500)
+// CORS (safe)
 // --------------------
 const allowedOrigins = (process.env.ALLOWED_ORIGINS || "")
   .split(",")
@@ -22,16 +24,9 @@ const allowedOrigins = (process.env.ALLOWED_ORIGINS || "")
 app.use(
   cors({
     origin: (origin, callback) => {
-      // No Origin header = curl / Postman / server-to-server
       if (!origin) return callback(null, true);
-
-      // If you haven't set an allowlist yet, allow all (dev-friendly)
       if (allowedOrigins.length === 0) return callback(null, true);
-
-      // Allow only listed origins
       if (allowedOrigins.includes(origin)) return callback(null, true);
-
-      // Block silently (DO NOT throw / do not cause 500)
       return callback(null, false);
     },
     methods: ["GET", "POST", "OPTIONS"],
@@ -39,8 +34,21 @@ app.use(
   })
 );
 
-// Preflight for all routes (important for multipart/form-data)
 app.options("*", cors());
+
+// --------------------
+// Swagger (MUST be before other routes)
+// --------------------
+app.get("/", (req, res) => res.redirect("/docs"));
+app.get("/openapi.json", (req, res) => res.json(openapiSpec));
+app.use(
+  "/docs",
+  swaggerUi.serve,
+  swaggerUi.setup(openapiSpec, {
+    explorer: true,
+    customSiteTitle: "BMW Render Configurator API Docs"
+  })
+);
 
 // --------------------
 // Upload
@@ -117,7 +125,6 @@ async function toPngBuffer(file) {
 async function callOpenAIImageEdit({ apiKey, pngBuffer, prompt, size }) {
   const form = new FormData();
 
-  // IMPORTANT: use image[] (array syntax)
   form.append("image[]", pngBuffer, {
     filename: "bike.png",
     contentType: "image/png"
@@ -153,7 +160,6 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
   try {
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) return res.status(500).json({ error: "Missing OPENAI_API_KEY" });
-
     if (!req.file) return res.status(400).json({ error: "bike_image (file) is required" });
 
     const variant = normalizeVariant(req.body?.variant);
@@ -163,6 +169,7 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
     const background = String(req.body?.background || "studio_gray").toLowerCase().trim();
     const realism = String(req.body?.realism || "studio_3d").toLowerCase().trim();
     const size = normalizeSize(req.body?.size);
+    const debug = String(req.body?.debug || "false") === "true";
 
     const accessoryCsv = String(req.body?.accessory_ids || "");
     if (!accessoryCsv.trim()) {
@@ -171,22 +178,23 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
 
     const { selected, missing, filtered_out } = store.resolveFromCsv(accessoryCsv, { mountableOnly: true });
 
-    const prompt = buildEditPrompt({
-      variant,
-      view,
-      background,
-      realism,
-      accessories: selected
-    });
+    const prompt = buildEditPrompt({ variant, view, background, realism, accessories: selected });
+
+    if (debug) {
+      return res.json({
+        ok: true,
+        variant,
+        view,
+        size,
+        missing_accessory_ids: missing,
+        filtered_out,
+        resolved_accessories: selected,
+        prompt
+      });
+    }
 
     const bikePng = await toPngBuffer(req.file);
-
-    const result = await callOpenAIImageEdit({
-      apiKey,
-      pngBuffer: bikePng,
-      prompt,
-      size
-    });
+    const result = await callOpenAIImageEdit({ apiKey, pngBuffer: bikePng, prompt, size });
 
     if (!result.ok) {
       return res.status(result.status).json({
@@ -213,7 +221,6 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
   }
 });
 
-// Optional helper: returns OpenAI JSON so you can debug without writing PNG
 app.post("/v1/bike/render/json", upload.single("bike_image"), async (req, res) => {
   try {
     const apiKey = process.env.OPENAI_API_KEY;
