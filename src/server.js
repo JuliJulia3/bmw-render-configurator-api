@@ -124,45 +124,25 @@ async function toRgbaPngBuffer(file) {
 }
 
 /**
- * Calls the OpenAI Responses API (/v1/responses) with gpt-image-1.
- * /v1/images/edits only accepts dall-e-2; gpt-image-1 requires the Responses API.
- * The image is sent as a base64 data-URL inside the JSON body — no multipart needed.
+ * Calls OpenAI /v1/images/edits with gpt-image-1.
+ * Uses native Node 18 FormData + Blob — NOT the form-data npm package.
+ * Native FormData lets fetch set the correct multipart boundary automatically.
  */
 async function callOpenAIImageEdit({ apiKey, model, pngBuffer, prompt, size }) {
-  const b64Image = pngBuffer.toString("base64");
+  const form = new FormData();
 
-  const body = {
-    model,
-    input: [
-      {
-        role: "user",
-        content: [
-          {
-            type: "input_image",
-            image_url: `data:image/png;base64,${b64Image}`
-          },
-          {
-            type: "input_text",
-            text: prompt
-          }
-        ]
-      }
-    ],
-    tools: [
-      {
-        type: "image_generation",
-        size
-      }
-    ]
-  };
+  // image[] is required by gpt-image-1; native Blob wrapping ensures correct encoding.
+  form.append("image[]", new Blob([pngBuffer], { type: "image/png" }), "bike.png");
+  form.append("model", model);
+  form.append("prompt", prompt);
+  form.append("size", size);
+  form.append("output_format", "png");
 
-  const r = await fetch("https://api.openai.com/v1/responses", {
+  // Do NOT set Content-Type manually — fetch derives it (with boundary) from the FormData.
+  const r = await fetch("https://api.openai.com/v1/images/edits", {
     method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(body)
+    headers: { Authorization: `Bearer ${apiKey}` },
+    body: form
   });
 
   const text = await r.text();
@@ -260,8 +240,7 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
       });
     }
 
-    // Responses API: output is an array; find the image_generation_call item.
-    const b64 = result.json?.output?.find(o => o.type === "image_generation_call")?.result;
+    const b64 = result.json?.data?.[0]?.b64_json;
     if (!b64) {
       return res.status(500).json({
         error: "No b64_json returned",
