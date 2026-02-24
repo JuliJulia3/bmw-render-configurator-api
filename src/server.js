@@ -89,23 +89,78 @@ function normalizeView(v) {
   return allowed.has(s) ? s : "left";
 }
 
-// API accepts these, but if we're using dall-e-2 we will override to 1024x1024 anyway
+// For non-dall-e-2 models (if you ever enable them)
 function normalizeSize(s) {
   const v = String(s || "1536x1024").trim();
   const allowed = new Set(["1024x1024", "1536x1024", "1024x1536"]);
   return allowed.has(v) ? v : "1536x1024";
 }
 
-// For dall-e-2 edits, valid sizes are 256/512/1024 square.
-// We'll choose 1024x1024 for best quality, and force the input image to match.
+// DALL·E 2 edits require square sizes: 256/512/1024
 function normalizeDalle2Size() {
   return "1024x1024";
 }
 
+function viewText(view) {
+  if (view === "front_3q") return "front three-quarter view";
+  if (view === "rear_3q") return "rear three-quarter view";
+  return `${view} side view`;
+}
+
+function variantText(variant) {
+  return variant === "r1300gs_adventure" ? "BMW R1300GS Adventure" : "BMW R1300GS";
+}
+
+/**
+ * DALL·E 2 has prompt max length 1000.
+ * This builds a compact prompt (names only) and guarantees maxLen.
+ */
+function buildCompactDalle2Prompt({ variant, view, background, realism, accessories, maxLen = 950 }) {
+  const bikeText = variantText(variant);
+  const bg = background === "white" ? "pure white seamless studio background" : "neutral studio gray studio background";
+
+  const style =
+    realism === "more_real"
+      ? "Photorealistic studio product render, realistic materials, accurate shadows."
+      : realism === "slightly_stylized"
+      ? "High-quality studio 3D product render, subtle stylization, realistic materials."
+      : "Premium studio 3D catalog render, realistic materials, clean lighting.";
+
+  // Names only. No descriptions (they explode length).
+  const names = (accessories || [])
+    .map((a) => String(a?.name || a?.title || a?.id || "").trim())
+    .filter(Boolean);
+
+  // Start with a strict, short base prompt.
+  let p =
+    `Edit the uploaded photo of a motorcycle.\n` +
+    `Keep the same motorcycle identity and silhouette.\n` +
+    `Transform it into a single clean ${bikeText} studio product render, ${viewText(view)}.\n` +
+    `Style: ${style}\n` +
+    `Background: ${bg}\n` +
+    `Constraints: one bike only, no people, no extra objects, no text, no watermark.\n`;
+
+  // Add accessories but stop before hitting maxLen
+  if (names.length > 0) {
+    p += `Accessories to install and clearly show mounted on the bike: `;
+    for (let i = 0; i < names.length; i++) {
+      const part = (i === 0 ? "" : ", ") + names[i];
+      if ((p + part).length > maxLen) break;
+      p += part;
+    }
+    p += ".\n";
+  }
+
+  // Final hard cap
+  if (p.length > maxLen) p = p.slice(0, maxLen);
+
+  return p.trim();
+}
+
 /**
  * Convert input file -> PNG buffer.
- * If square=true, we produce a square image of targetPx x targetPx (cover),
- * which matches dall-e-2 "square png" expectations.
+ * If square=true, produce a square image of targetPx x targetPx (cover crop),
+ * which matches dall-e-2 expectations.
  */
 async function toPngBuffer(file, { targetPx = 1600, square = false } = {}) {
   const mime = (file.mimetype || "").toLowerCase();
@@ -118,15 +173,11 @@ async function toPngBuffer(file, { targetPx = 1600, square = false } = {}) {
 
   const pipeline = (inputBuf) => {
     let p = sharp(inputBuf, { animated: false }).rotate();
-
     if (square) {
-      // Force square for dall-e-2 (cover crops as needed)
       p = p.resize({ width: targetPx, height: targetPx, fit: "cover" });
     } else {
-      // Keep aspect ratio
       p = p.resize({ width: targetPx, height: targetPx, fit: "inside", withoutEnlargement: true });
     }
-
     return p.png().toBuffer();
   };
 
@@ -141,20 +192,15 @@ async function toPngBuffer(file, { targetPx = 1600, square = false } = {}) {
 
 /**
  * OpenAI Image Edit call (native FormData + Blob)
- * Uses OPENAI_IMAGE_MODEL if set, else defaults to dall-e-2.
  */
 async function callOpenAIImageEdit({ apiKey, pngBuffer, prompt, size, model }) {
   const form = new FormData();
-
   const blob = new Blob([pngBuffer], { type: "image/png" });
 
-  // IMPORTANT: for edits, field name is "image"
+  // Correct field name for edits
   form.append("image", blob, "bike.png");
-
   form.append("model", model);
   form.append("prompt", String(prompt || ""));
-
-  // For dall-e-2, size must be square 256/512/1024.
   form.append("size", String(size));
   form.append("response_format", "b64_json");
 
@@ -162,7 +208,6 @@ async function callOpenAIImageEdit({ apiKey, pngBuffer, prompt, size, model }) {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
-      // DO NOT set Content-Type manually
     },
     body: form,
   });
@@ -201,23 +246,27 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
 
     const { selected, missing, filtered_out } = store.resolveFromCsv(accessoryCsv, { mountableOnly: true });
 
-    const prompt = buildEditPrompt({ variant, view, background, realism, accessories: selected });
-
-    // Choose image model (default dall-e-2 because your project is restricted)
+    // Choose image model (your OpenAI is forcing dall-e-2)
     const model = String(process.env.OPENAI_IMAGE_MODEL || "dall-e-2").trim();
-
-    // If using dall-e-2, force square size and square input
     const isDalle2 = model === "dall-e-2";
+
+    // Size handling
     const size = isDalle2 ? normalizeDalle2Size() : requestedSize;
+
+    // Prompt handling: DALL·E 2 prompt must be <= 1000 chars
+    const prompt = isDalle2
+      ? buildCompactDalle2Prompt({ variant, view, background, realism, accessories: selected, maxLen: 950 })
+      : buildEditPrompt({ variant, view, background, realism, accessories: selected });
 
     if (debug) {
       return res.json({
         ok: true,
+        model,
         variant,
         view,
         requested_size: requestedSize,
         effective_size: size,
-        model,
+        prompt_length: prompt.length,
         missing_accessory_ids: missing,
         filtered_out,
         resolved_accessories: selected,
@@ -225,7 +274,7 @@ app.post("/v1/bike/render", upload.single("bike_image"), async (req, res) => {
       });
     }
 
-    // Prepare image buffer according to model constraints
+    // Image prep: for dall-e-2, force square 1024
     const bikePng = isDalle2
       ? await toPngBuffer(req.file, { targetPx: 1024, square: true })
       : await toPngBuffer(req.file, { targetPx: 1600, square: false });
@@ -278,11 +327,13 @@ app.post("/v1/bike/render/json", upload.single("bike_image"), async (req, res) =
 
     const { selected, missing, filtered_out } = store.resolveFromCsv(accessoryCsv, { mountableOnly: true });
 
-    const prompt = buildEditPrompt({ variant, view, background, realism, accessories: selected });
-
     const model = String(process.env.OPENAI_IMAGE_MODEL || "dall-e-2").trim();
     const isDalle2 = model === "dall-e-2";
     const size = isDalle2 ? normalizeDalle2Size() : requestedSize;
+
+    const prompt = isDalle2
+      ? buildCompactDalle2Prompt({ variant, view, background, realism, accessories: selected, maxLen: 950 })
+      : buildEditPrompt({ variant, view, background, realism, accessories: selected });
 
     const bikePng = isDalle2
       ? await toPngBuffer(req.file, { targetPx: 1024, square: true })
@@ -296,6 +347,7 @@ app.post("/v1/bike/render/json", upload.single("bike_image"), async (req, res) =
       model,
       requested_size: requestedSize,
       effective_size: size,
+      prompt_length: prompt.length,
       missing_accessory_ids: missing,
       filtered_out,
       openai: result.json ?? result.rawText,
